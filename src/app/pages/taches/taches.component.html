@@ -1,0 +1,48 @@
+<table mat-table [dataSource]="items" class="mat-elevation-z8">
+  <caption>Liste des matchs</caption>
+
+  <!-- Nom -->
+  <ng-container matColumnDef="nom">
+    <th mat-header-cell *matHeaderCellDef> Nom de la tâche </th>
+    <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+  </ng-container>
+
+  <!-- Description -->
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+  </ng-container>
+
+  <!-- Modif -->
+  <ng-container matColumnDef="modif">
+    <th mat-header-cell *matHeaderCellDef> Modifier la tâche </th>
+    <td mat-cell *matCellDef="let element">
+        <button class="icon" mat-fab color="primary" aria-label="Modifier" value=modif (click)="openDialogModif(element)">
+          <mat-icon>filter_list</mat-icon>
+        </button>
+    </td>
+  </ng-container>
+
+  <!-- Supprimer -->
+  <ng-container matColumnDef="suppr">
+    <th mat-header-cell *matHeaderCellDef> Supprimer la tâche </th>
+    <td mat-cell *matCellDef="let element">
+      <form (ngSubmit)="suppr(element)">
+        <button class="icon" mat-fab color="primary" aria-label="Supprimer" value=suppr>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </form>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<div class="actions-section">
+  <button mat-flat-button class="add" type="submit" color="primary" (click)="openDialogAdd()">Ajouter une tâche</button>
+  <button mat-flat-button class="deco" type="submit" color="primary" (click)="deco()">Déconnexion</button>
+</div>
+
+<app-modif-task *ngIf="taskSelected" [task]="taskSelected"></app-modif-task>
+

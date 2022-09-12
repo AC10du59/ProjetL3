@@ -1,0 +1,25 @@
+button, h1, h2{
+  display: block;
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+
+h1{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration: blink;
+}
+
+.ok{
+  display: block;
+  font-size: 14px;
+  margin: 30px auto 0px auto;
+  min-width: 120px;
+}
+
+.mat-form-field{
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+}

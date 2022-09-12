@@ -1,0 +1,51 @@
+caption{
+  margin-bottom: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration: blink;
+
+}
+
+.icon{
+  display: block;
+  margin: 10px 0px 10px 44px;
+}
+
+
+th{
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.actions-section {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.actions-section > * {
+  margin: 30px 0 0 15px;
+}
+
+td{
+  font-size: 15px;
+}
+
+table{
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+
+.afficherModif{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}

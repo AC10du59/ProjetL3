@@ -1,0 +1,20 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <h1 mat-dialog-title>Modifier une tâche</h1>
+
+    <mat-form-field class="nom">
+      <mat-label>Nom</mat-label>
+      <textarea matInput formControlName="nom"></textarea>
+   </mat-form-field>
+
+    <mat-form-field class="description">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+  </mat-form-field>
+
+  <mat-dialog-actions align="end">
+    <button mat-flat-button class="ok" type="submit" color="primary" (click)="onSubmit()">Modifier</button>
+    <button mat-button mat-dialog-close class="retour"(click)="close()">Retour</button>
+  </mat-dialog-actions>
+
+</form>
+

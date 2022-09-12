@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projetl3-98e75": {
+      "hosting": {
+        "my-app": [
+          "projetl3-98e75"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projetl3-98e75"
+  }
+}

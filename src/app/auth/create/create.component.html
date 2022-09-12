@@ -1,0 +1,26 @@
+<form [formGroup]="profileForm">
+
+  <h1>Création du compte</h1>
+  <h2>Bienvenue {{ this.profileForm.get("nom")?.value }}</h2>
+
+    <mat-form-field class="nom">
+      <mat-label>Nom</mat-label>
+      <textarea matInput formControlName="nom"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="email">
+      <mat-label>Adresse mail</mat-label>
+      <textarea matInput placeholder="Ex. pat@gmail.com" formControlName="email"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Mot de passe</mat-label>
+      <input matInput formControlName="mdp" [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+  </form>
+
+  <button mat-flat-button class="ok" type="submit" color="primary" (click)="onSubmit()">Valider</button>
