@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
       return true;
     } else {
         this.router.navigate(['/auth/connexion-component']);
-        window.alert("Créer votre compte avant de pouvoir accéder à la liste des matchs !");
+        window.alert("Créer votre compte ou connecter vous avant de pouvoir accéder à la liste des matchs !");
         return false;
       }
     }

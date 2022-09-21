@@ -1,13 +1,7 @@
 <form [formGroup]="profileForm">
 
   <h1>Création du compte</h1>
-  <h2>Bienvenue {{ this.profileForm.get("nom")?.value }}</h2>
-
-    <mat-form-field class="nom">
-      <mat-label>Nom</mat-label>
-      <textarea matInput formControlName="nom"></textarea>
-    </mat-form-field>
-
+  
     <mat-form-field class="email">
       <mat-label>Adresse mail</mat-label>
       <textarea matInput placeholder="Ex. pat@gmail.com" formControlName="email"></textarea>

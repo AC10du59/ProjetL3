@@ -37,7 +37,7 @@ export class ModifTaskComponent implements OnInit {
       this.taskService.modifyTask(this.profileForm.get("id")?.value, this.profileForm.get("nom")?.value, this.profileForm.get("description")?.value);
     }
     else{
-      window.alert("Formulaire invalide !!!");
+      window.alert("Formulaire invalide !");
     }
   }
 

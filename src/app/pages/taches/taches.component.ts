@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { AuthService } from '../../core/services/auth.service';
 import { ITask } from '../../core/models/task.model';
@@ -7,7 +7,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { IMatch } from 'src/app/core/models/match.model';
 import { IScore } from 'src/app/core/models/score.model';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-taches',
@@ -104,9 +103,4 @@ export class TachesComponent implements OnInit {
   public openDialogModif(data: ITask): void{
     this.taskSelected = data;
   }
-
-  public deco(): void {
-    this.authService.signOutUser();
-  }
-
 }

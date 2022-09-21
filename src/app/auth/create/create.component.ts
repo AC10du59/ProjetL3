@@ -19,7 +19,6 @@ export class CreateComponent implements OnInit {
   public hide = true;
 
   public profileForm = this.cr.group({
-    nom: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
     mdp: ['', Validators.required],
   });

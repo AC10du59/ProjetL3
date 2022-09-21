@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AuthService } from './core/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent {
   url: string = 'https://www.wellingtonsoccer.com/lib/api/auth.cfc?returnFormat=JSON&method=Authenticate';
   myImageUrl = "./Logo.jpg";
 
-  constructor(private http: HttpClient, public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private authService: AuthService) {}
 
   public connect(): boolean {
     return sessionStorage.getItem('isConnected') == 'true';
@@ -26,7 +27,10 @@ export class AppComponent {
       height: '400px',
       width: '600px',
     });
-    
+  }
+
+  public deco(): void {
+    this.authService.signOutUser();
   }
 
   /*public getInfos(): void {

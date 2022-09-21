@@ -37,7 +37,7 @@ export class ConnexionComponent implements OnInit, CanActivate {
       this.authService.signIn(this.profileCoForm.get("email")?.value, this.profileCoForm.get("mdp")?.value);
     }
     else{
-      window.alert("Formulaire invalide !!!");
+      window.alert("Formulaire invalide !");
     }
   }
   public canActivate() {

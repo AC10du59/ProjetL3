@@ -1,6 +1,6 @@
 button, h1, h2{
   display: block;
-  margin: 10px auto 0px auto;
+  margin: 0px auto 0px auto;
   text-align: center;
 }
 
@@ -8,6 +8,7 @@ h1{
   font-weight: bold;
   text-decoration: underline;
   text-decoration: blink;
+  margin-bottom: 25px;
 }
 
 .ok{

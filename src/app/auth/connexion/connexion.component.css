@@ -8,6 +8,7 @@ h1{
   font-weight: bold;
   text-decoration: underline;
   text-decoration: blink;
+  margin-bottom: 25px;
 }
 
 .ok{

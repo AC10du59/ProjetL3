@@ -8,11 +8,16 @@
       <span class="title">Pari-Ligue 1 </span>
       <span class="example-spacer"></span>
       <section>
-          <a mat-stroked-button (click)="sidenav.toggle()" href="">Accueil</a>
-          <a mat-stroked-button (click)="openDialogContact()">Contact</a>
+          <a class="buttonTop" mat-stroked-button (click)="sidenav.toggle()" href=""> Accueil </a>
+          <a class="buttonTop" mat-stroked-button (click)="openDialogContact()"> Contact </a>
       </section>
-
-      <div *ngIf="!connect()"><a mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a></div>
+      <div *ngIf="!connect(); else elseBlockDeco">
+        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
+        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/create-component'" routerLinkActive="active"> Création compte </a>
+      </div>
+      <ng-template #elseBlockDeco>
+        <button class="buttonTop" mat-stroked-button (click)="deco()">Déconnexion</button>
+      </ng-template>
 
       <router-outlet></router-outlet>
 
@@ -30,6 +35,7 @@
         <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>HOME</a>
         <div *ngIf="connect(); else elseBlock">
           <a mat-list-item [routerLink]="'/tasks/taches-component'" routerLinkActive="active"> Liste des matchs </a>
+          <a mat-list-item [routerLink]="'/tasks/classement-component'" routerLinkActive="active"> Classement </a>
         </div>
         <ng-template #elseBlock>
           <a mat-list-item [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
@@ -49,8 +55,6 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
-  <!-- <button mat-button color="blue" (click)="sendPostRequest()">Test</button> -->
 
 <footer>
   <h1>Aurélien Carray - Estebann Koenig - Engueran Raout</h1>

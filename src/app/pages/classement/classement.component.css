@@ -1,0 +1,23 @@
+caption{
+    margin-bottom: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration: blink;
+}
+
+th{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+td{
+    font-size: 15px;
+}
+  
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
