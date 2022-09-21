@@ -4,10 +4,15 @@
       <button mat-icon-button>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </button>
-      <span class="title">Pari-Ligue 1</span>
+      <img src="assets/img/log.png" alt="image"/>
+      <span class="title">Pari-Ligue 1 </span>
       <span class="example-spacer"></span>
+      <section>
+          <a mat-stroked-button (click)="sidenav.toggle()" href="">Accueil</a>
+          <a mat-stroked-button (click)="openDialogContact()">Contact</a>
+      </section>
 
-      <div *ngIf="!connect()"><a mat-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a></div>
+      <div *ngIf="!connect()"><a mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a></div>
 
       <router-outlet></router-outlet>
 
@@ -49,4 +54,5 @@
 
 <footer>
   <h1>Aurélien Carray - Estebann Koenig - Engueran Raout</h1>
+ 
 </footer>

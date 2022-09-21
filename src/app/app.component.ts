@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +13,20 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AppComponent {
   title = 'Pari-Ligue 1';
   url: string = 'https://www.wellingtonsoccer.com/lib/api/auth.cfc?returnFormat=JSON&method=Authenticate';
+  myImageUrl = "./Logo.jpg";
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public dialog: MatDialog) {}
 
   public connect(): boolean {
     return sessionStorage.getItem('isConnected') == 'true';
+  }
+
+  public openDialogContact(): void {
+    this.dialog.open(ContactComponent, {
+      height: '400px',
+      width: '600px',
+    });
+    
   }
 
   /*public getInfos(): void {

@@ -40,7 +40,6 @@ export class ConnexionComponent implements OnInit, CanActivate {
       window.alert("Formulaire invalide !!!");
     }
   }
-
   public canActivate() {
     return true;
   }

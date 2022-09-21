@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AddTaskComponent } from './taches/add-task/add-task.component';
 import { ModifTaskComponent } from './taches/modif-task/modif-task.component';
 import { TachesComponent } from './taches/taches.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   declarations: [TachesComponent,
     AddTaskComponent,
     ModifTaskComponent,
+    ContactComponent,
   ],
   imports: [RouterModule.forChild(routes), MatTableModule, SharedModule],
   exports: [RouterModule],
