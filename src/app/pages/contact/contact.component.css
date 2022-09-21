@@ -1,1 +1,8 @@
-@import '../../../styles/_forms.scss'
+.description{
+    width: 75%;
+    height: 100%;
+}
+
+.email{
+    width: 50%;
+}
