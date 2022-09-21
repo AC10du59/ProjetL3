@@ -6,6 +6,8 @@ import { AuthService } from '../../core/services/auth.service';
 
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { IUser } from 'src/app/core/models/user.model';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-create',
@@ -19,11 +21,12 @@ export class CreateComponent implements OnInit {
   public hide = true;
 
   public profileForm = this.cr.group({
+    pseudo: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
     mdp: ['', Validators.required],
   });
 
-  constructor(private cr: FormBuilder, private authService: AuthService, private router: Router) { }
+  constructor(private cr: FormBuilder, private firestore: AngularFirestore, private authService: AuthService) { }
 
   public ngOnInit(): void {
   }
@@ -31,10 +34,16 @@ export class CreateComponent implements OnInit {
   public onSubmit(): void {
     this.profileForm.markAllAsTouched();
     if (this.profileForm.valid) {
-      this.authService.signUp(this.profileForm.get("email")?.value, this.profileForm.get("mdp")?.value);
+      let data: IUser = {email: this.profileForm.get("email")?.value, pseudo: this.profileForm.get("pseudo")?.value, points : 0};
+      this.firestore.collection("users").add(data).then(() => {
+        window.alert("Votre compte a bien été créé !");
+      }).catch((error) => {
+        window.alert("Erreur lors de la création du compte.");
+      });
+      this.authService.signUp(this.profileForm.get("pseudo")?.value, this.profileForm.get("email")?.value, this.profileForm.get("mdp")?.value);
     }
     else{
-      window.alert("Formulaire d'inscription invalide !!!");
+      window.alert("Formulaire d'inscription invalide !");
     }
   }
 

@@ -1,6 +1,10 @@
 <form [formGroup]="profileForm">
-
   <h1>Création du compte</h1>
+
+  <mat-form-field class="pseudo">
+    <mat-label>Pseudo</mat-label>
+    <textarea matInput formControlName="pseudo"></textarea>
+  </mat-form-field>
   
     <mat-form-field class="email">
       <mat-label>Adresse mail</mat-label>

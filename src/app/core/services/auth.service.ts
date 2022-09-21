@@ -19,24 +19,21 @@ export class AuthService {
     }
 
   // s'inscrire avec l'email et le mot de passe
-  public signUp(email: string, password: string) {
+  public signUp(pseudo: string, email: string, password: string) {
     return this.afAuth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
-        window.alert("Votre compte a bien été créé !");
+        window.alert("Bienvenue " + pseudo + " ! Connectes-toi et viens décrocher la 1ère place !");
         this.router.navigate(['/auth/connexion-component']);
       }).catch((error) => {
         window.alert(error.message)
       })
     }
 
-
-
-
   // se connecter avec l'email et le mot de passe
   public signIn(email: string, password: string) {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .then((result) => {
-         window.alert("Vous êtes bien connecté !");
+         window.alert("Tu es de retour parmi nous ! Viens décrocher la 1ère place !");
          sessionStorage.setItem("isConnected", "true");
          this.router.navigate(['/tasks/taches-component']);
       }).catch((error) => {
