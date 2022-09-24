@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
-
 import { AuthService } from '../../core/services/auth.service';
-
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { IUser } from 'src/app/core/models/user.model';
 import { AngularFirestore } from '@angular/fire/firestore';
 
