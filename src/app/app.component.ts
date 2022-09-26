@@ -12,9 +12,8 @@ import { AuthService } from './core/services/auth.service';
 })
 @Injectable()
 export class AppComponent {
-  title = 'Pari-Ligue 1';
+  title = 'CKR FOOT';
   url: string = 'https://www.wellingtonsoccer.com/lib/api/auth.cfc?returnFormat=JSON&method=Authenticate';
-  myImageUrl = "./Logo.jpg";
 
   constructor(public dialog: MatDialog, private authService: AuthService) {}
 
