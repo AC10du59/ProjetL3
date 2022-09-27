@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { IMatch } from 'src/app/core/models/match.model';
 import { IScore } from 'src/app/core/models/score.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-taches',
@@ -30,7 +31,7 @@ export class TachesComponent implements OnInit {
   public constructor(private firestore: AngularFirestore, private authService: AuthService, public dialog: MatDialog) {
   }
 
- /* public ngOnInit(): void {
+  public ngOnInit(): void {
     this.matchs = this.firestore.collection<IMatch>('matchs').snapshotChanges().pipe(
       map(e=> {
         return e.map(r => {
@@ -41,52 +42,27 @@ export class TachesComponent implements OnInit {
     this.authService.user.subscribe((user)=> {
       this.scores = this.firestore.collection<IScore>('scores', (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
         map(e=> {
-          return e.map(r => {
+          return this.addMatch(e.map(r => {
             return {id: r.payload.doc.id, ... r.payload.doc.data()};
-          })
+          }))
         })
       );
     });
-  }*/
-
-  public ngOnInit(): void {
-    this.matchs = this.firestore.collection<IMatch>('matchs').valueChanges();
-    this.authService.user.subscribe((user)=> {
-      this.scores = this.firestore.collection<IScore>('scores', (ref) => ref.where("email", "==", user.email)).valueChanges();
-      this.scores.subscribe((valueSco) => { 
-        this.matchs.subscribe((valueMat) => {
-          for(let i = 0; i < valueMat.length; i++) {
-            for(let j = 0; j < valueSco.length; j++) {
-              if(valueMat[i].idMatch == valueSco[j].idMatch) {
-                valueMat[i].score1 = valueSco[j].score1;
-                valueMat[i].score2 = valueSco[j].score2;
-              }
-            }
-          }
-        });
-      });
-    });
-
-    this.matchs.subscribe((valueMat) => { console.log(valueMat) });
   }
-
-  /*public getData(): void {
-    let tmp = 0;
-    for(let i = 0; i < this.matchsData.length; i++) {
-      for(let j = 0; j < this.scoresData.length; j++) {
-        if(this.matchsData[i].idMatch == this.scoresData[j].idMatch) {
-          let match = this.matchsData[i];
-          match.score1 = this.scoresData[j].score1;
-          match.score2 = this.scoresData[j].score2;
-          this.dataSource.push(match);
-          tmp = 1;
+  
+  public addMatch(tableau: IScore[]): IScore[] {
+    this.matchs.subscribe((valueMat) => { 
+      for(let i = 0; i < valueMat.length; i++) {
+        for(let j = 0; j < tableau.length; j++) {
+          if(valueMat[i].idMatch == tableau[j].idMatch) {
+            tableau[j].equipe1 = valueMat[i].equipe1;
+            tableau[j].equipe2 = valueMat[i].equipe2;
+          }
         }
-        if(tmp==0) this.dataSource.push(this.matchsData[i]);
-        else tmp = 0;
       }
-    }
-    console.log(this.dataSource);
-  }*/
+    });
+    return tableau;
+  }
 
   public suppr(data: ITask): void {
     this.firestore.collection("tasks").doc(data.id).delete().then(() => {
