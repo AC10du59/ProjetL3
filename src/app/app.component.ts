@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthService } from './core/services/auth.service';
+import { ReglesComponent } from './pages/regles/regles.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,13 @@ export class AppComponent {
 
   public openDialogContact(): void {
     this.dialog.open(ContactComponent, {
+      height: '400px',
+      width: '600px',
+    });
+  }
+
+  public openDialogRegles(): void {
+    this.dialog.open(ReglesComponent, {
       height: '400px',
       width: '600px',
     });

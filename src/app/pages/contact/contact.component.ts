@@ -21,7 +21,6 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit(): void {
-
     if (this.profileForm.valid){
       let data: IContact = {email: this.profileForm.get("email")?.value, description: this.profileForm.get("description")?.value};
       this.firestore.collection("contacts").add(data).then(() => {
