@@ -15,6 +15,7 @@
       <div *ngIf="!connect(); else elseBlockDeco">
         <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
         <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/create-component'" routerLinkActive="active"> Création compte </a>
+        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
       </div>
       <ng-template #elseBlockDeco>
         <button class="buttonTop" mat-stroked-button (click)="deco()">Déconnexion</button>
@@ -33,9 +34,9 @@
   <mat-sidenav-container>
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>HOME</a>
+        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Accueil</a>
         <div *ngIf="connect(); else elseBlock">
-          <a mat-list-item [routerLink]="'/tasks/taches-component'" routerLinkActive="active"> Liste des matchs </a>
+          <a mat-list-item [routerLink]="'/tasks/match-component'" routerLinkActive="active"> Liste des matchs </a>
           <a mat-list-item [routerLink]="'/tasks/classement-component'" routerLinkActive="active"> Classement </a>
         </div>
         <ng-template #elseBlock>
@@ -59,5 +60,5 @@
 
 <footer>
   <h1>Aurélien Carray - Estebann Koenig - Engueran Raout</h1>
- 
+
 </footer>

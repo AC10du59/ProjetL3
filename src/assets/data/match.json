@@ -1,0 +1,3042 @@
+[
+  {
+    "idMatch": "70760",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "0",
+    "scoreExterieur": "0",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70761",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "0",
+    "scoreExterieur": "5",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70762",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "3",
+    "scoreExterieur": "2",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70763",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "4",
+    "scoreExterieur": "1",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70764",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70765",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "4",
+    "scoreExterieur": "1",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70766",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "3",
+    "scoreExterieur": "2",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70767",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70768",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "1",
+    "scoreExterieur": "2",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70769",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "1"
+  },
+  {
+    "idMatch": "70770",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "0",
+    "scoreExterieur": "0",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70771",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "2",
+    "scoreExterieur": "2",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70772",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70773",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "3",
+    "scoreExterieur": "1",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70774",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70775",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70776",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70777",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "5",
+    "scoreExterieur": "2",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70778",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "2",
+    "scoreExterieur": "4",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70779",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "0",
+    "scoreExterieur": "3",
+    "journee": "2"
+  },
+  {
+    "idMatch": "70780",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "1",
+    "scoreExterieur": "3",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70781",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70782",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "1",
+    "scoreExterieur": "7",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70783",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "4",
+    "scoreExterieur": "1",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70784",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70785",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "1",
+    "scoreExterieur": "4",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70786",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "2",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70787",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70788",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70789",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "2",
+    "scoreExterieur": "2",
+    "journee": "3"
+  },
+  {
+    "idMatch": "70790",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "3",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70791",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70792",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "0",
+    "scoreExterieur": "7",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70793",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70794",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70795",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "3",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70796",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "0",
+    "scoreExterieur": "3",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70797",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70798",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70799",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "3",
+    "scoreExterieur": "1",
+    "journee": "4"
+  },
+  {
+    "idMatch": "70800",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "2",
+    "scoreExterieur": "4",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70801",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "5",
+    "scoreExterieur": "2",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70802",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "2",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70803",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70804",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70805",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "2",
+    "scoreExterieur": "4",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70806",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "2",
+    "scoreExterieur": "0",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70807",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "3",
+    "scoreExterieur": "1",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70808",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70809",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "0",
+    "scoreExterieur": "3",
+    "journee": "5"
+  },
+  {
+    "idMatch": "70810",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70811",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "0",
+    "scoreExterieur": "2",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70812",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70813",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "2",
+    "scoreExterieur": "0",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70814",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "5",
+    "scoreExterieur": "0",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70815",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "1",
+    "scoreExterieur": "3",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70816",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "0",
+    "scoreExterieur": "3",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70817",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70818",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70819",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "6"
+  },
+  {
+    "idMatch": "70820",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70821",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70822",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70823",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "3",
+    "scoreExterieur": "2",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70824",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70825",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70826",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70827",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "5",
+    "scoreExterieur": "0",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70828",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "0",
+    "scoreExterieur": "0",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70829",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "1",
+    "scoreExterieur": "0",
+    "journee": "7"
+  },
+  {
+    "idMatch": "70830",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "1",
+    "scoreExterieur": "3",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70831",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70832",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "1",
+    "scoreExterieur": "3",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70833",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70834",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70835",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "1",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70836",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "2",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70837",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "0",
+    "scoreExterieur": "0",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70838",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "0",
+    "scoreExterieur": "1",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70839",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "0",
+    "scoreExterieur": "3",
+    "journee": "8"
+  },
+  {
+    "idMatch": "70840",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70841",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70842",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70843",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "20:45",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70844",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "13:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70845",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "17:05",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70846",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70847",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "17:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70848",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70849",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "9"
+  },
+  {
+    "idMatch": "70850",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70851",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70852",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70853",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "20:45",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70854",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70855",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "17:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70856",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "13:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70857",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70858",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70859",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "17:05",
+    "scoreExterieur": "",
+    "journee": "10"
+  },
+  {
+    "idMatch": "70860",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70861",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70862",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "17:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70863",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "17:05",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70864",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70865",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "20:45",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70866",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70867",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70868",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "13:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70869",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "11"
+  },
+  {
+    "idMatch": "70870",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70871",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "13:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70872",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70873",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "20:45",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70874",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70875",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "17:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70876",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "17:05",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70877",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70878",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70879",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "15:00",
+    "scoreExterieur": "",
+    "journee": "12"
+  },
+  {
+    "idMatch": "70880",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70881",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70882",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70883",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70884",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70885",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70886",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70887",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70888",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70889",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "13"
+  },
+  {
+    "idMatch": "70890",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70891",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70892",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70893",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70894",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70895",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70896",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70897",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70898",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70899",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "14"
+  },
+  {
+    "idMatch": "70900",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70901",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70902",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70903",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70904",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70905",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70906",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70907",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70908",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70909",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "15"
+  },
+  {
+    "idMatch": "70910",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70911",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70912",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70913",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70914",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70915",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70916",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70917",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70918",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70919",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "16"
+  },
+  {
+    "idMatch": "70920",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70921",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70922",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70923",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70924",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70925",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70926",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70927",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70928",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70929",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "17"
+  },
+  {
+    "idMatch": "70930",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70931",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70932",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70933",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70934",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70935",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70936",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70937",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70938",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70939",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "18"
+  },
+  {
+    "idMatch": "70950",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70951",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70952",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70953",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70954",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70955",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70956",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70957",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70958",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70959",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "20"
+  },
+  {
+    "idMatch": "70960",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70961",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70962",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70963",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70964",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70965",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70966",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70967",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70968",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70969",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "21"
+  },
+  {
+    "idMatch": "70970",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70971",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70972",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70973",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70974",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70975",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70976",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70977",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70978",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70979",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "22"
+  },
+  {
+    "idMatch": "70980",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70981",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70982",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70983",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70984",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70985",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70986",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70987",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70988",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70989",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "23"
+  },
+  {
+    "idMatch": "70990",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70991",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70992",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70993",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70994",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70995",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70996",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70997",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70998",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "70999",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "24"
+  },
+  {
+    "idMatch": "71000",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71001",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71002",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71003",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71004",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71005",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71006",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71007",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71008",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71009",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "25"
+  },
+  {
+    "idMatch": "71010",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71011",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71012",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71013",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71014",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71015",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71016",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71017",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71018",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71019",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "26"
+  },
+  {
+    "idMatch": "71020",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71021",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71022",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71023",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71024",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71025",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71026",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71027",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71028",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71029",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "27"
+  },
+  {
+    "idMatch": "71030",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71031",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71032",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71033",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71034",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71035",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71036",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71037",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71038",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71039",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "28"
+  },
+  {
+    "idMatch": "71040",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71041",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71042",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71043",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71044",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71045",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71046",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71047",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71048",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71049",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "29"
+  },
+  {
+    "idMatch": "71050",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71051",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71052",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71053",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71054",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71055",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71056",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71057",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71058",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71059",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "30"
+  },
+  {
+    "idMatch": "71060",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71061",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71062",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71063",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71064",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71065",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71066",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71067",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71068",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71069",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "31"
+  },
+  {
+    "idMatch": "71070",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71071",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71072",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71073",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71074",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71075",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71076",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71077",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71078",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71079",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "32"
+  },
+  {
+    "idMatch": "71080",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71081",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71082",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71083",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71084",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71085",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71086",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71087",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71088",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71089",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "33"
+  },
+  {
+    "idMatch": "71090",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71091",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71092",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71093",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71094",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71095",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71096",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71097",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71098",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71099",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "34"
+  },
+  {
+    "idMatch": "71100",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71101",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71102",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71103",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71104",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71105",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71106",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71107",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71108",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71109",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "35"
+  },
+  {
+    "idMatch": "71110",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71111",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71112",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71113",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71114",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71115",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71116",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71117",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71118",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71119",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "36"
+  },
+  {
+    "idMatch": "71120",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71121",
+    "equipeDomicile": "CLERMONT FOOT 63",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71122",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71123",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71124",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "STADE DE REIMS",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71125",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71126",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71127",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "AS MONACO",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71128",
+    "equipeDomicile": "RC STRASBOURG ALSACE",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71129",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "37"
+  },
+  {
+    "idMatch": "71130",
+    "equipeDomicile": "AC AJACCIO",
+    "equipeExterieur": "OLYMPIQUE DE MARSEILLE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71131",
+    "equipeDomicile": "AJ AUXERRE",
+    "equipeExterieur": "RC LENS",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71132",
+    "equipeDomicile": "STADE BRESTOIS 29",
+    "equipeExterieur": "STADE RENNAIS FC",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71133",
+    "equipeDomicile": "FC LORIENT",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71134",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "TOULOUSE FC",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71135",
+    "equipeDomicile": "FC NANTES",
+    "equipeExterieur": "ANGERS SCO",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71136",
+    "equipeDomicile": "OGC NICE",
+    "equipeExterieur": "OLYMPIQUE LYONNAIS",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71137",
+    "equipeDomicile": "PARIS SAINT-GERMAIN",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71138",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "MONTPELLIER H&#201;RAULT SC",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71139",
+    "equipeDomicile": "ESTAC TROYES",
+    "equipeExterieur": "LOSC LILLE",
+    "scoreDomicile": "21:00",
+    "scoreExterieur": "",
+    "journee": "38"
+  },
+  {
+    "idMatch": "71520",
+    "equipeDomicile": "STADE DE REIMS",
+    "equipeExterieur": "OGC NICE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71522",
+    "equipeDomicile": "ANGERS SCO",
+    "equipeExterieur": "CLERMONT FOOT 63",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71523",
+    "equipeDomicile": "RC LENS",
+    "equipeExterieur": "AJ AUXERRE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71524",
+    "equipeDomicile": "LOSC LILLE",
+    "equipeExterieur": "ESTAC TROYES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71525",
+    "equipeDomicile": "OLYMPIQUE LYONNAIS",
+    "equipeExterieur": "RC STRASBOURG ALSACE",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71526",
+    "equipeDomicile": "OLYMPIQUE DE MARSEILLE",
+    "equipeExterieur": "FC LORIENT",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71527",
+    "equipeDomicile": "AS MONACO",
+    "equipeExterieur": "AC AJACCIO",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71528",
+    "equipeDomicile": "MONTPELLIER H&#201;RAULT SC",
+    "equipeExterieur": "FC NANTES",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71529",
+    "equipeDomicile": "STADE RENNAIS FC",
+    "equipeExterieur": "PARIS SAINT-GERMAIN",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  },
+  {
+    "idMatch": "71530",
+    "equipeDomicile": "TOULOUSE FC",
+    "equipeExterieur": "STADE BRESTOIS 29",
+    "scoreDomicile": "--:--",
+    "scoreExterieur": "",
+    "journee": "19"
+  }
+]

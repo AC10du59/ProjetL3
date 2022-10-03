@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthService } from './core/services/auth.service';
 import { ReglesComponent } from './pages/regles/regles.component';
+import {MatchComponent} from './pages/match/match.component';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +37,14 @@ export class AppComponent {
     });
   }
 
+
+  public openDialogMatchs(): void {
+    this.dialog.open(MatchComponent, {
+      height: '400px',
+      width: '600px',
+    });
+  }
+
   public deco(): void {
     this.authService.signOutUser();
   }
@@ -54,7 +63,7 @@ export class AppComponent {
     request(options, function (error: string | undefined, response: { body: any; }) {
       if (error) throw new Error(error);
       console.log(response.body);
-      }); 
+      });
     }
 
     sendPostRequest() {
@@ -74,6 +83,6 @@ export class AppComponent {
         })
 
         return this.http.post(this.url, body, { headers: headers }).subscribe(response => console.log(response));
-    }   */    
+    }   */
 
 }

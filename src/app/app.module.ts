@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './core/services/auth.service';
@@ -17,10 +17,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddTaskComponent } from './pages/taches/add-task/add-task.component';
 import { CoreModule } from './core/core.module';
+import { MatchComponent } from './pages/match/match.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MatchComponent,
 
     ],
   imports: [
