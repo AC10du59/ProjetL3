@@ -24,7 +24,7 @@ export class TachesComponent implements OnInit {
   public scores: Observable<IScore[]>;
 
   public headElements = ['Equipe 1', 'Score 1', 'Score 2', 'Equipe 2'];
-  public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2"];
+  public displayedColumns: string[] = ['equipe1', "score1", "score2", "equipe2"];
 
   public taskSelected: ITask;
 
@@ -49,9 +49,9 @@ export class TachesComponent implements OnInit {
       );
     });
   }
-  
+
   public addMatch(tableau: IScore[]): IScore[] {
-    this.matchs.subscribe((valueMat) => { 
+    this.matchs.subscribe((valueMat) => {
       for(let i = 0; i < valueMat.length; i++) {
         for(let j = 0; j < tableau.length; j++) {
           if(valueMat[i].idMatch == tableau[j].idMatch) {

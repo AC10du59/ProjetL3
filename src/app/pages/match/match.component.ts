@@ -23,6 +23,9 @@ export class MatchComponent implements OnInit {
 
   matchs: Imatch[] = matchJson;
 
+
+
+
   ngOnInit(): void {
   }
 

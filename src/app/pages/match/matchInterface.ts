@@ -6,3 +6,4 @@ interface Imatch{
   scoreExterieur: number;
   journee: number;
 }
+
