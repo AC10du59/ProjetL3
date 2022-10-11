@@ -51,9 +51,9 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
+<!--
 <div class="actions-section">
   <button mat-flat-button class="add" type="submit" color="primary" (click)="openDialogAdd()">Ajouter une tâche</button>
 </div>
-
+ -->
 <app-modif-task *ngIf="taskSelected" [task]="taskSelected"></app-modif-task>
-

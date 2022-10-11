@@ -30,7 +30,6 @@ export class ConnexionComponent implements OnInit, CanActivate {
 
 
   public onSubmit(): void {
-
     this.profileCoForm.markAllAsTouched();
 
     if (this.profileCoForm.valid) {

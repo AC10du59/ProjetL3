@@ -40,11 +40,12 @@ export class AppComponent implements OnInit {
     return sessionStorage.getItem('isConnected') == 'true';
   }
 
-  public communaute(): boolean {  
-    if(this.users==undefined) return false;
+  public communaute(): boolean {
+    return true;
+    /*if(this.users==undefined) return false;
     this.users.subscribe(event => this.user = event[0]);
     if(this.user.communaute) return true;
-    else return false; 
+    else return false;*/
   }
 
   public openDialogContact(): void {
