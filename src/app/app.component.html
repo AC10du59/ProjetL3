@@ -13,7 +13,6 @@
           <a class="buttonTop" mat-stroked-button (click)="openDialogRegles()"> Règles </a>
       </section>
       <div *ngIf="!connect(); else elseBlockDeco">
-        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
         <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/create-component'" routerLinkActive="active"> Création compte </a>
         <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
       </div>

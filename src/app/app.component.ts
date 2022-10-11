@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
@@ -17,7 +17,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 })
 @Injectable()
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'CKR FOOT';
   url: string = 'https://www.wellingtonsoccer.com/lib/api/auth.cfc?returnFormat=JSON&method=Authenticate';
   public users: Observable<IUser[]>;
@@ -25,11 +25,7 @@ export class AppComponent {
 
   constructor(public dialog: MatDialog, private authService: AuthService, private firestore: AngularFirestore) {}
 
-  public connect(): boolean {
-    return sessionStorage.getItem('isConnected') == 'true';
-  }
-
-  public communaute(): boolean {
+  public ngOnInit(): void {
     this.authService.user.subscribe((user)=> {
       this.users = this.firestore.collection<IUser>('users', (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
         map(e=> {
@@ -38,11 +34,17 @@ export class AppComponent {
           })
         }))
       });
-      
-      this.users.subscribe(event => this.user = event[0]);
+  }
 
-      if(this.user.communaute) return true;
-      else return false;
+  public connect(): boolean {
+    return sessionStorage.getItem('isConnected') == 'true';
+  }
+
+  public communaute(): boolean {  
+    if(this.users==undefined) return false;
+    this.users.subscribe(event => this.user = event[0]);
+    if(this.user.communaute) return true;
+    else return false; 
   }
 
   public openDialogContact(): void {
