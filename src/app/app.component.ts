@@ -6,6 +6,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AuthService } from './core/services/auth.service';
 import { ReglesComponent } from './pages/regles/regles.component';
 import {MatchComponent} from './pages/match/match.component';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { IUser } from './core/models/user.model';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +20,29 @@ import {MatchComponent} from './pages/match/match.component';
 export class AppComponent {
   title = 'CKR FOOT';
   url: string = 'https://www.wellingtonsoccer.com/lib/api/auth.cfc?returnFormat=JSON&method=Authenticate';
+  public users: Observable<IUser[]>;
+  public user: IUser;
 
-  constructor(public dialog: MatDialog, private authService: AuthService) {}
+  constructor(public dialog: MatDialog, private authService: AuthService, private firestore: AngularFirestore) {}
 
   public connect(): boolean {
     return sessionStorage.getItem('isConnected') == 'true';
+  }
+
+  public communaute(): boolean {
+    this.authService.user.subscribe((user)=> {
+      this.users = this.firestore.collection<IUser>('users', (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
+        map(e=> {
+          return e.map(r => {
+            return {id: r.payload.doc.id, ... r.payload.doc.data()};
+          })
+        }))
+      });
+      
+      this.users.subscribe(event => this.user = event[0]);
+
+      if(this.user.communaute) return true;
+      else return false;
   }
 
   public openDialogContact(): void {

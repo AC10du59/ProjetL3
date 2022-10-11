@@ -4,4 +4,5 @@ export interface IUser {
   pseudo: string;
   points: number;
   rang?: string;
+  communaute?: string;
 }

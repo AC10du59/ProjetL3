@@ -27,6 +27,13 @@
 
     <mat-toolbar-row>
       <span>Affronte tes amis et montre que tu es le meilleur !</span>
+      <span class="example-spacer"></span>
+      <div *ngIf="communaute()&&connect(); else elseCommu">
+        <span>Bienvenue dans ta commu !</span>
+      </div>
+      <ng-template #elseCommu>
+        <span>Rejoins une commu !</span>
+      </ng-template>
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
