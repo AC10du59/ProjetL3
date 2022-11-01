@@ -3,6 +3,19 @@
 
 }
 
+
+h1 {
+  color: #ff5f7a;
+  font-size: 6em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100vw;
+  text-align: center;
+
+}
+
+
 table {
   margin-left: auto;
   margin-right: auto;
@@ -18,8 +31,26 @@ td#nul {
 }
 
 td {
-  background: #92a1e6;
   border-radius: 10px;
   height: 50px;
   width: 500px;
+  border-spacing: 10em;
+}
+
+.equipeColor {
+  color: #3646a8 !important;
+}
+
+
+.equipe {
+  cursor: grab;
+  user-select: none;
+  width: 95vw;
+  font-size: 4em;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.equipeUnderlight {
+  text-decoration: underline #ff5f7a;
 }

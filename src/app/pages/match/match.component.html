@@ -8,4 +8,52 @@
       <td>{{match.equipeExterieur}}</td>
     </tbody>
   </table>
+<h1> Grille journée </h1>
 
+
+<table>
+  <thead>
+  </thead>
+  <tbody>
+  <!-- Affiches les  les matchs -->
+  <tr *ngFor="let match of ligue1_API ">
+    <!-- assigne au td la classe equipeCouleur et equipe -->
+    <!-- lorsque la souris passe sur le td, on enleve la couleur de base -->
+    <!-- On execute la fonction pour trouver et mettre dans le Json la couleur assigné au club -->
+    <!-- On remet la couleur de base lorsque la souris sort-->
+    <td class="equipeColor equipe"
+        onmouseover="this.classList.remove('equipeColor')"
+        onmouseleave="this.classList.add('equipeColor')"
+        (mouseover)="colorHomeTeamOnMouse(match.homeTeam)"
+        onclick="this.classList.add('equipeUnderlight')"
+        ondblclick="this.classList.remove('equipeUnderlight')"
+        [style.color]="color"
+
+
+
+
+    >
+      <!--Affiche les noms des equipes a domicile dans le json-->
+      {{match.homeTeam}}
+    </td>
+
+    <!-- assigne au td la classe equipeCouleur et equipe -->
+    <!-- lorsque la souris passe sur le td, on enleve la couleur de base -->
+    <!-- On execute la fonction pour trouver et mettre dans le Json la couleur assigné au club -->
+    <!-- On remet la couleur de base lorsque la souris sort-->
+    <td class="equipeColor equipe"
+        onmouseover="this.classList.remove('equipeColor')"
+        onmouseleave="this.classList.add('equipeColor')"
+        (mouseover)="colorAwayTeamOnMouse(match.awayTeam)"
+        onclick="this.classList.add('equipeUnderlight')"
+        ondblclick="this.classList.remove('equipeUnderlight')"
+        [style.color]="color"
+    >
+
+      <!--Affiche les noms des equipes a l'exterieur dans le json-->
+      {{match.awayTeam}}
+    </td>
+
+  </tr>
+  </tbody>
+</table>
