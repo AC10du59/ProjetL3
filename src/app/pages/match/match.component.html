@@ -6,7 +6,7 @@
   <p class="journee">Journée {{pageEvent.pageIndex+1}}</p>
 </div>
 <ng-template #elseBlock>
-  <p class="journee">Journée 1</p>
+  <p class="journee">Journée {{this.journeeActuelle()}}</p>
 </ng-template>
 
 <div>

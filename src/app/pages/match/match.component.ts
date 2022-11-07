@@ -38,11 +38,13 @@ export class MatchComponent implements OnInit, AfterViewInit {
   }
   
   public ngAfterViewInit() {
+    this.paginator.pageIndex = Number(this.journeeActuelle()) - 1;
     this.dataSource.paginator = this.paginator;
   }
 
   public ngOnInit(): void {
     this.color = "";
+    this.paginator.pageIndex = Number(this.journeeActuelle()) - 1;
   }
 
   public colorHomeTeamOnMouse(teamSelect: string) {
@@ -62,6 +64,15 @@ export class MatchComponent implements OnInit, AfterViewInit {
       }
     }
   }
+
+  public journeeActuelle() {
+    let i;
+    for(i=0; i < this.ligue1_API.length; i++) {
+      if(this.ligue1_API[i].scoreHomeTeam == "" && this.ligue1_API[i].scoreAwayTeam == "") return this.ligue1_API[i].day;
+    }
+    return 1;
+  }
+
 
   /*
 
