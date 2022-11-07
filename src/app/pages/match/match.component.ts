@@ -1,4 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 // @ts-ignore
 import matchJson from '../../../assets/data/ligue1_API.json';
 // @ts-ignore
@@ -22,21 +25,25 @@ interface Imatch {
   templateUrl: './match.component.html',
   styleUrls: ['./match.component.css']
 })
-export class MatchComponent implements OnInit {
-  constructor() {
+export class MatchComponent implements OnInit, AfterViewInit {
+
+  public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2"];
+  public ligue1_API: Imatch[] = matchJson;
+  public color: string;
+  public dataSource = new MatTableDataSource<Imatch>(this.ligue1_API);
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  public pageEvent: PageEvent;
+
+  public constructor() {
   }
-  // initalise le json ligue1_API
-  ligue1_API: Imatch[] = matchJson;
-  // initalise la couleur pour pouvoir modifié les couleurs par rapport aux equipes
-  color: string;
-  matchs: any;
+  
+  public ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
-
-  ngOnInit(): void {
-
+  public ngOnInit(): void {
     this.color = "";
   }
-
 
   public colorHomeTeamOnMouse(teamSelect: string) {
     for (let match of this.ligue1_API) {
@@ -98,4 +105,3 @@ export class MatchComponent implements OnInit {
 
 
 }
-

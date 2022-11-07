@@ -18,13 +18,12 @@ export class TachesComponent implements OnInit {
 
   public matchsData: IMatch[];
   public scoresData: IScore[];
-  public dataSource: Array<IMatch> = [];
 
   public matchs: Observable<IMatch[]>;
   public scores: Observable<IScore[]>;
 
   public headElements = ['Equipe 1', 'Score 1', 'Score 2', 'Equipe 2'];
-  public displayedColumns: string[] = ['equipe1', "score1", "score2", "equipe2"];
+  public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2"];
 
   public taskSelected: ITask;
 

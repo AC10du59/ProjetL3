@@ -7,17 +7,22 @@ caption{
 }
 
 th{
-    text-align: center;
+    text-align: center !important;
     font-size: 18px;
     text-decoration: underline;
-}
+    color: #3646a8;
+    font-weight: bold;
+  }
 
 td{
     font-size: 15px;
+    text-align: center;
+    color: #3646a8;
+    font-weight: bold;
 }
   
 table{
-    width: 95%;
+    width: 85%;
     margin: auto;
     border-collapse: collapse;
 }

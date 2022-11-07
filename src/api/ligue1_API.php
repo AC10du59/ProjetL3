@@ -143,7 +143,7 @@ function colorTeam($teamName)
     $json = "[";
     $j = 1;
     $c = 1;
-    for ($i = 0; $i < 381; $i++) {
+    for ($i = 0; $i < 380; $i++) {
         $json .= "{";
         $json .= '"day":"' . ($j) . '",';
         //  $json .= '"dateMatch:"' . $dateDay[($j)] . '",';

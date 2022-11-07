@@ -17,13 +17,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddTaskComponent } from './pages/taches/add-task/add-task.component';
 import { CoreModule } from './core/core.module';
-import { MatchComponent } from './pages/match/match.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatchComponent,
-
     ],
   imports: [
     BrowserModule,

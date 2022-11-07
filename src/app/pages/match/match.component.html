@@ -1,59 +1,52 @@
-  <table>
-    <thead>
-    </thead>
-    <tbody>
-    <tr *ngFor="let match of matchs">
-      <td>{{match.equipeDomicile}}</td>
-      <td id ="nul">Match nul</td>
-      <td>{{match.equipeExterieur}}</td>
-    </tbody>
+<p class="titre">Liste des matchs</p>
+
+<img class="image" src="../../../assets/img/logoL1.png" alt="image"/>
+
+<div *ngIf="pageEvent; else elseBlock">
+  <p class="journee">Journée {{pageEvent.pageIndex+1}}</p>
+</div>
+<ng-template #elseBlock>
+  <p class="journee">Journée 1</p>
+</ng-template>
+
+<div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Equipe 1 -->
+    <ng-container matColumnDef="equipe1">
+      <th mat-header-cell *matHeaderCellDef> Equipe domicile </th>
+      <td class="equipeColor equipe"
+          onmouseover="this.classList.remove('equipeColor')"
+          onmouseleave="this.classList.add('equipeColor')"
+          (mouseover)="colorHomeTeamOnMouse(match.homeTeam)"
+          [style.color]="color"
+          mat-cell *matCellDef="let match"> {{match.homeTeam}}  </td>
+    </ng-container>
+
+      <!-- Score 1 -->
+    <ng-container matColumnDef="score1">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let match"> {{match.scoreHomeTeam}} </td>
+    </ng-container>
+
+    <!-- Score 2 -->
+    <ng-container matColumnDef="score2">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let match"> {{match.scoreAwayTeam}} </td>
+    </ng-container>
+
+    <!-- Equipe 2 -->
+    <ng-container matColumnDef="equipe2">
+      <th mat-header-cell *matHeaderCellDef> Equipe extérieur </th>
+      <td class="equipeColor equipe"
+          onmouseover="this.classList.remove('equipeColor')"
+          onmouseleave="this.classList.add('equipeColor')"
+          (mouseover)="colorAwayTeamOnMouse(match.awayTeam)"
+          [style.color]="color" 
+          mat-cell *matCellDef="let match"> {{match.awayTeam}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-<h1> Grille journée </h1>
-
-
-<table>
-  <thead>
-  </thead>
-  <tbody>
-  <!-- Affiches les  les matchs -->
-  <tr *ngFor="let match of ligue1_API ">
-    <!-- assigne au td la classe equipeCouleur et equipe -->
-    <!-- lorsque la souris passe sur le td, on enleve la couleur de base -->
-    <!-- On execute la fonction pour trouver et mettre dans le Json la couleur assigné au club -->
-    <!-- On remet la couleur de base lorsque la souris sort-->
-    <td class="equipeColor equipe"
-        onmouseover="this.classList.remove('equipeColor')"
-        onmouseleave="this.classList.add('equipeColor')"
-        (mouseover)="colorHomeTeamOnMouse(match.homeTeam)"
-        onclick="this.classList.add('equipeUnderlight')"
-        ondblclick="this.classList.remove('equipeUnderlight')"
-        [style.color]="color"
-
-
-
-
-    >
-      <!--Affiche les noms des equipes a domicile dans le json-->
-      {{match.homeTeam}}
-    </td>
-
-    <!-- assigne au td la classe equipeCouleur et equipe -->
-    <!-- lorsque la souris passe sur le td, on enleve la couleur de base -->
-    <!-- On execute la fonction pour trouver et mettre dans le Json la couleur assigné au club -->
-    <!-- On remet la couleur de base lorsque la souris sort-->
-    <td class="equipeColor equipe"
-        onmouseover="this.classList.remove('equipeColor')"
-        onmouseleave="this.classList.add('equipeColor')"
-        (mouseover)="colorAwayTeamOnMouse(match.awayTeam)"
-        onclick="this.classList.add('equipeUnderlight')"
-        ondblclick="this.classList.remove('equipeUnderlight')"
-        [style.color]="color"
-    >
-
-      <!--Affiche les noms des equipes a l'exterieur dans le json-->
-      {{match.awayTeam}}
-    </td>
-
-  </tr>
-  </tbody>
-</table>
+  <mat-paginator class="pagination" [pageSize]="10" (page)="pageEvent = $event"></mat-paginator>
+</div>

@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthService } from './core/services/auth.service';
 import { ReglesComponent } from './pages/regles/regles.component';
-import {MatchComponent} from './pages/match/match.component';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { IUser } from './core/models/user.model';
 import { Observable } from 'rxjs';
@@ -57,14 +55,6 @@ export class AppComponent implements OnInit {
 
   public openDialogRegles(): void {
     this.dialog.open(ReglesComponent, {
-      height: '400px',
-      width: '600px',
-    });
-  }
-
-
-  public openDialogMatchs(): void {
-    this.dialog.open(MatchComponent, {
       height: '400px',
       width: '600px',
     });
