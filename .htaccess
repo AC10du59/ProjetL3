@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ dist/my-app/index.html [L]
+RewriteRule ^(.*)$ /dist/my-app/index.html [NC,L]
