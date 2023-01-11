@@ -2,6 +2,9 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { AuthService } from 'src/app/core/services/auth.service';
 // @ts-ignore
 import matchJson from '../../../assets/data/ligue1_API.json';
 // @ts-ignore
@@ -20,6 +23,11 @@ interface Imatch {
 }
 
 
+interface ITest {
+  dom: number;
+  ext: number;
+}
+
 @Component({
   selector: 'app-match',
   templateUrl: './match.component.html',
@@ -27,14 +35,18 @@ interface Imatch {
 })
 export class MatchComponent implements OnInit, AfterViewInit {
 
-  public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2"];
+  public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2", "pari", "resultat"];
   public ligue1_API: Imatch[] = matchJson;
   public color: string;
   public dataSource = new MatTableDataSource<Imatch>(this.ligue1_API);
   @ViewChild(MatPaginator) paginator: MatPaginator;
   public pageEvent: PageEvent;
 
-  public constructor() {
+
+  public test: Observable<ITest[]>;
+
+
+  public constructor(private firestore: AngularFirestore, private authService: AuthService) {
   }
   
   public ngAfterViewInit() {
@@ -44,7 +56,16 @@ export class MatchComponent implements OnInit, AfterViewInit {
 
   public ngOnInit(): void {
     this.color = "";
-    this.paginator.pageIndex = Number(this.journeeActuelle()) - 1;
+    console.log("test");
+    this.test = this.firestore.collection<ITest>('journees/matchs').snapshotChanges().pipe(
+      map(e=> {
+        console.log(e);
+        return e.map(r => {
+          return {id: r.payload.doc.id, ... r.payload.doc.data()};
+        })
+      })
+    );
+    this.test.subscribe(event => console.log(event[0]));
   }
 
   public colorHomeTeamOnMouse(teamSelect: string) {
