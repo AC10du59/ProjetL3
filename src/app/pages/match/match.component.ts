@@ -45,7 +45,6 @@ export class MatchComponent implements OnInit, AfterViewInit {
 
   public test: Observable<ITest[]>;
 
-
   public constructor(private firestore: AngularFirestore, private authService: AuthService) {
   }
   
