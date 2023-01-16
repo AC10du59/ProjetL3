@@ -30,7 +30,7 @@ export class AuthService {
     }
 
   // se connecter avec l'email et le mot de passe
-  public signIn(email: string, password: string) {
+  public  signIn(email: string, password: string) {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .then((result) => {
          window.alert("Tu es de retour parmi nous ! Viens décrocher la 1ère place !");
@@ -40,7 +40,9 @@ export class AuthService {
         window.alert(error.message)
       })
   }
+ 
 
+  
   // se déconnecter
   public signOutUser() {
     sessionStorage.setItem("isConnected", "false");
