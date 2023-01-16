@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TachesComponent } from './taches.component';
+import { PariComponent } from './pari.component';
 
-describe('TachesComponent', () => {
-  let component: TachesComponent;
-  let fixture: ComponentFixture<TachesComponent>;
+describe('PariComponent', () => {
+  let component: PariComponent;
+  let fixture: ComponentFixture<PariComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TachesComponent ]
+      declarations: [ PariComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TachesComponent);
+    fixture = TestBed.createComponent(PariComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

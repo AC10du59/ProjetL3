@@ -15,7 +15,6 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './core/services/auth.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AddTaskComponent } from './pages/taches/add-task/add-task.component';
 import { CoreModule } from './core/core.module';
 
 @NgModule({
@@ -41,6 +40,5 @@ import { CoreModule } from './core/core.module';
     ],
   providers: [AuthService],
   bootstrap: [AppComponent],
-  entryComponents: [AddTaskComponent],
 })
 export class AppModule { }

@@ -1,0 +1,66 @@
+.equipeColor {
+    color: #3646a8 !important;
+  }
+  
+  .equipe {
+    user-select: none;
+    font-weight: bold;
+    transition: 0.1s;
+  }
+  
+  .pagination {
+    width: 75%;
+    margin: auto;
+  }
+  
+  .titre {
+    margin: 0 auto 35px auto;
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: blink;
+  }
+  
+  .journee {
+    margin: 0 auto 20px auto;
+    padding-top: 9px;
+    width: 160px;
+    height: 30px;
+    border: solid #3646a8;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: blink;
+    color: #3646a8;
+  }
+  
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 87px;
+  }
+  
+  th{
+    text-align: center !important;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #3646a8;
+    font-weight: bold;
+  }
+  
+  td{
+    text-align: center;
+    font-size: 15px;
+    color: #3646a8;
+    font-weight: bold;
+  }
+  
+  table{
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+  }

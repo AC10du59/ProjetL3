@@ -42,8 +42,9 @@
       <mat-nav-list>
         <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Accueil</a>
         <div *ngIf="connect(); else elseBlock">
-          <a mat-list-item [routerLink]="'/tasks/match-component'" routerLinkActive="active"> Liste des matchs </a>
-          <a mat-list-item [routerLink]="'/tasks/classement-component'" routerLinkActive="active"> Classement </a>
+          <a mat-list-item [routerLink]="'/matchs/match-component'" routerLinkActive="active"> Résultats </a>
+          <a mat-list-item [routerLink]="'/matchs/pari-component'" routerLinkActive="active"> Mes paris </a>
+          <a mat-list-item [routerLink]="'/matchs/classement-component'" routerLinkActive="active"> Classement </a>
         </div>
         <ng-template #elseBlock>
           <a mat-list-item [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>

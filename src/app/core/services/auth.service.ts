@@ -35,7 +35,7 @@ export class AuthService {
       .then((result) => {
          window.alert("Tu es de retour parmi nous ! Viens décrocher la 1ère place !");
          sessionStorage.setItem("isConnected", "true");
-         this.router.navigate(['/tasks/match-component'])
+         this.router.navigate(['/matchs/match-component'])
       }).catch((error) => {
         window.alert(error.message)
       })
