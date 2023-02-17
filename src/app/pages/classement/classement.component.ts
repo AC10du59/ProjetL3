@@ -38,7 +38,7 @@ export class ClassementComponent implements OnInit {
       if(i != 0) {
         if(tableau[i].points != tableau[i-1].points) {
           tableau[i].rang = "" + rangCompteur;
-        } 
+        }
         else {
           tableau[i].rang = "-";
         }
@@ -48,5 +48,5 @@ export class ClassementComponent implements OnInit {
       rangCompteur += 1;
     }
     return tableau;
-	}
+  }
 }
