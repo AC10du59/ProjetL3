@@ -11,6 +11,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+
 
 const MODULES = [
   CommonModule,
@@ -24,6 +26,7 @@ const MODULES = [
   FormsModule,
   MatInputModule,
   MatDialogModule,
+  MatSelectModule
 ]
 
 @NgModule({

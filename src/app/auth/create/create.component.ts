@@ -23,7 +23,7 @@ export class CreateComponent implements OnInit {
     mdp: ['', Validators.required],
   });
 
-  constructor(private cr: FormBuilder, private firestore: AngularFirestore, private authService: AuthService) { }
+  constructor(private cr: FormBuilder, private authService: AuthService) { }
 
   public ngOnInit(): void {
   }
@@ -31,12 +31,6 @@ export class CreateComponent implements OnInit {
   public onSubmit(): void {
     this.profileForm.markAllAsTouched();
     if (this.profileForm.valid) {
-      let data: IUser = {email: this.profileForm.get("email")?.value, pseudo: this.profileForm.get("pseudo")?.value, points : 0};
-      this.firestore.collection("users").add(data).then(() => {
-        window.alert("Votre compte a bien été créé !");
-      }).catch((error) => {
-        window.alert("Erreur lors de la création du compte.");
-      });
       this.authService.signUp(this.profileForm.get("pseudo")?.value, this.profileForm.get("email")?.value, this.profileForm.get("mdp")?.value);
     }
     else{

@@ -2,8 +2,6 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { AuthService } from 'src/app/core/services/auth.service';
 // @ts-ignore
 import matchJson from '../../../assets/data/ligue1_API.json';
@@ -20,12 +18,7 @@ interface Imatch {
   scoreAwayTeam: string;
   colorHomeTeam: string;
   colorAwayTeam: string;
-}
-
-
-interface ITest {
-  dom: number;
-  ext: number;
+  resultat?: string;
 }
 
 @Component({
@@ -42,29 +35,35 @@ export class MatchComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   public pageEvent: PageEvent;
 
-
-  public test: Observable<ITest[]>;
-
-  public constructor(private firestore: AngularFirestore, private authService: AuthService) {
+  public constructor() {
   }
   
   public ngAfterViewInit() {
     this.paginator.pageIndex = Number(this.journeeActuelle()) - 1;
     this.dataSource.paginator = this.paginator;
+
+    //this.ligue1_API.forEach(element => console.log(element));
+
+    this.ligue1_API.forEach(function(element) {
+      /* pour mettre le resultat
+      
+      if(element.scoreHomeTeam == "2" && element.scoreAwayTeam == "1") {
+        element.resultat = "+ 10";
+      } 
+      else if (element.scoreHomeTeam == element.scoreAwayTeam){
+
+      }
+      else {
+        element.resultat = "-";
+      }*/
+      element.resultat = "-";
+    });
+
   }
+
 
   public ngOnInit(): void {
     this.color = "";
-    console.log("test");
-    this.test = this.firestore.collection<ITest>('journees/matchs').snapshotChanges().pipe(
-      map(e=> {
-        console.log(e);
-        return e.map(r => {
-          return {id: r.payload.doc.id, ... r.payload.doc.data()};
-        })
-      })
-    );
-    this.test.subscribe(event => console.log(event[0]));
   }
 
   public colorHomeTeamOnMouse(teamSelect: string) {

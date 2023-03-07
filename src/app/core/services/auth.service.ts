@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -14,7 +15,8 @@ export class AuthService {
 
   constructor(
     public afAuth: AngularFireAuth,
-    public router: Router  ) {
+    public router: Router,
+    private firestore: AngularFirestore  ) {
       this.user = this.afAuth.authState.pipe(map(state => ({email: state?.email} as IUser)));
     }
 
@@ -23,6 +25,12 @@ export class AuthService {
     return this.afAuth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
         window.alert("Bienvenue " + pseudo + " ! Connectes-toi et viens décrocher la 1ère place !");
+        let data: IUser = {email: email, pseudo: pseudo, points : 0};
+        this.firestore.collection("users").add(data).then(() => {
+          console.log("Compte bien créé !");
+        }).catch((error) => {
+          window.alert("Erreur lors de la création du compte.");
+        });
         this.router.navigate(['/auth/connexion-component']);
       }).catch((error) => {
         window.alert(error.message)
