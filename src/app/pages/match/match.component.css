@@ -23,7 +23,7 @@
 }
 
 .journee {
-  margin: 0 auto 20px auto;
+  margin: 40px auto 40px auto;
   padding-top: 9px;
   width: 160px;
   height: 30px;
@@ -63,4 +63,9 @@ table{
   width: 75%;
   margin: auto;
   border-collapse: collapse;
+}
+
+#space{
+  margin-top: 75px;
+  color: white;
 }

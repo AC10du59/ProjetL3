@@ -2,58 +2,47 @@
 
 <img class="image" src="../../../assets/img/logoL1.png" alt="image"/>
 
-<p class="journee">Prochaine journée : J{{this.journeeSuivante()}}</p>
+<p class="journee">Prochaine journée : J{{this.journee}}</p>
   
-<div>
-    <table mat-table [dataSource]="journeeUsers" class="mat-elevation-z8">
-     
-      <!-- Equipe 1 -->
-      <ng-container matColumnDef="equipe1">
-        <th mat-header-cell *matHeaderCellDef> Equipe domicile </th>
-        <td class="equipeColor equipe"
-            onmouseover="this.classList.remove('equipeColor')"
-            onmouseleave="this.classList.add('equipeColor')"
-            (mouseover)="colorHomeTeamOnMouse(match.homeTeam)"
-            [style.color]="color"
-            mat-cell *matCellDef="let match"> {{match.equipeDom}}  </td>
-      </ng-container>
+<table mat-table [dataSource]="journeeUsers" class="mat-elevation-z8">
+  <!-- Equipe 1 -->
+  <ng-container matColumnDef="equipe1">
+    <th mat-header-cell *matHeaderCellDef> Equipe domicile </th>
+    <td mat-cell *matCellDef="let match"> {{match.equipeDom}}  </td>
+  </ng-container>
 
-      <!-- Score 1 -->
-      <ng-container matColumnDef="score1">
-        <th mat-header-cell *matHeaderCellDef> </th>
-        <td mat-cell *matCellDef="let element; let index = index">
-            <input type="number" name="score1-{{index}}" [(ngModel)]="element.scoreDom"/>
-        </td>
-      </ng-container>
+  <!-- Score 1 -->
+  <ng-container matColumnDef="score1">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let element; let index = index">
+      <input type="number" name="score1-{{index}}" min="0" max="20" [(ngModel)]="element.scoreDom"/>
+    </td>
+  </ng-container>
 
-      <!-- Score 2 -->
-      <ng-container matColumnDef="score2">
-        <th mat-header-cell *matHeaderCellDef> </th>
-        <td mat-cell *matCellDef="let element; let index = index">
-            <input type="number" name="score2-{{index}}" [(ngModel)]="element.scoreExt"/>
-        </td>
-      </ng-container>
+  <!-- Score 2 -->
+  <ng-container matColumnDef="score2">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let element; let index = index">
+      <input type="number" name="score2-{{index}}" min="0" max="20" [(ngModel)]="element.scoreExt"/>
+    </td>
+  </ng-container>
   
-      <!-- Equipe 2 -->
-      <ng-container matColumnDef="equipe2">
-        <th mat-header-cell *matHeaderCellDef> Equipe extérieur </th>
-        <td class="equipeColor equipe"
-            onmouseover="this.classList.remove('equipeColor')"
-            onmouseleave="this.classList.add('equipeColor')"
-            (mouseover)="colorAwayTeamOnMouse(match.awayTeam)"
-            [style.color]="color" 
-            mat-cell *matCellDef="let match"> {{match.equipeExt}} </td>
-      </ng-container>
+  <!-- Equipe 2 -->
+  <ng-container matColumnDef="equipe2">
+    <th mat-header-cell *matHeaderCellDef> Equipe extérieur </th>
+    <td mat-cell *matCellDef="let match"> {{match.equipeExt}} </td>
+  </ng-container>
 
-      <!-- Modif -->
-      <ng-container matColumnDef="modif">
-        <th mat-header-cell *matHeaderCellDef> Modifier </th>
-        <td mat-cell *matCellDef="let element">
-          <button class="icon" mat-fab color="primary" aria-label="Modifier" value=modif (click)="modify(element)"></button>
-        </td>
-      </ng-container>
+  <!-- Modif -->
+  <ng-container matColumnDef="modif">
+    <th mat-header-cell *matHeaderCellDef> Modifier </th>
+    <td mat-cell *matCellDef="let element">
+      <button class="icon" mat-fab color="primary" aria-label="Modifier" value=modif (click)="modify(element)"></button>
+    </td>
+  </ng-container>
 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: let i = index; columns: displayedColumns;"></tr>
-    </table>
-  </div>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: let i = index; columns: displayedColumns;"></tr>
+</table>
+
+<p id="space">.</p>

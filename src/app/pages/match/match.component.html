@@ -1,55 +1,52 @@
 <p class="titre">Résultats des matchs</p>
 
 <img class="image" src="../../../assets/img/logoL1.png" alt="image"/>
-
 <div *ngIf="pageEvent; else elseBlock">
-  <p class="journee">Journée {{pageEvent.pageIndex+1}}</p>
+  <p class="journee">Journée {{journeeActuelle()}}</p>
 </div>
 <ng-template #elseBlock>
-  <p class="journee">Journée {{this.journeeActuelle()}}</p>
+  <p class="journee">Journée {{journeeActuelle()}}</p>
 </ng-template>
+
 
 <div>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <!-- Equipe 1 -->
-    <ng-container matColumnDef="equipe1">
+    <ng-container matColumnDef="clubDesktop_domicile">
       <th mat-header-cell *matHeaderCellDef> Equipe domicile </th>
       <td class="equipeColor equipe"
-          onmouseover="this.classList.remove('equipeColor')"
-          onmouseleave="this.classList.add('equipeColor')"
-          (mouseover)="colorHomeTeamOnMouse(match.homeTeam)"
+          (mouseenter)="colorHomeTeamOnMouse(match.equipeDomicile)"
+          (mouseleave)="color = ''"
           [style.color]="color"
-          mat-cell *matCellDef="let match"> {{match.homeTeam}}  </td>
+          mat-cell *matCellDef="let match"> {{match.clubDesktop_domicile}}  </td>
     </ng-container>
 
-      <!-- Score 1 -->
-    <ng-container matColumnDef="score1">
+    <!-- Score 1 -->
+    <ng-container matColumnDef="score_domicile">
       <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let match"> {{match.scoreHomeTeam}} </td>
+      <td mat-cell *matCellDef="let match"> {{match.score_domicile}} </td>
     </ng-container>
 
     <!-- Score 2 -->
-    <ng-container matColumnDef="score2">
+    <ng-container matColumnDef="score_exterieur">
       <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let match"> {{match.scoreAwayTeam}} </td>
+      <td mat-cell *matCellDef="let match"> {{match.score_exterieur}} </td>
     </ng-container>
 
     <!-- Equipe 2 -->
-    <ng-container matColumnDef="equipe2">
+    <ng-container matColumnDef="clubDesktop_exterieur">
       <th mat-header-cell *matHeaderCellDef> Equipe extérieur </th>
       <td class="equipeColor equipe"
-          onmouseover="this.classList.remove('equipeColor')"
-          onmouseleave="this.classList.add('equipeColor')"
-          (mouseover)="colorAwayTeamOnMouse(match.awayTeam)"
-          [style.color]="color" 
-          mat-cell *matCellDef="let match"> {{match.awayTeam}} </td>
+          (mouseenter)="colorAwayTeamOnMouse(match.equipeExterieur)"
+          (mouseleave)="color = ''"
+          [style.color]="color"
+          mat-cell *matCellDef="let match"> {{match.clubDesktop_exterieur}} </td>
     </ng-container>
 
     <ng-container matColumnDef="pari">
       <th mat-header-cell *matHeaderCellDef> Mon pari </th>
       <td mat-cell *matCellDef="let match"> 2 - 1 </td>
     </ng-container>
-
 
     <ng-container matColumnDef="resultat">
       <th mat-header-cell *matHeaderCellDef> Résultat </th>
@@ -59,5 +56,7 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <mat-paginator class="pagination" [pageSize]="10" (page)="pageEvent = $event"></mat-paginator>
+  <mat-paginator class="pagination" [pageSize]="10" (page)="onChangePage($event)" [length]="380" showFirstLastButtons></mat-paginator>
 </div>
+
+<p id="space">.</p>
