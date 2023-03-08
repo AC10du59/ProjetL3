@@ -29,7 +29,6 @@ interface IJournee {
 export class PariComponent implements OnInit {
 
   public displayedColumns: string[] = ["equipe1", "score1", "score2", "equipe2", "modif"];
-  public color: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   public pageEvent: PageEvent;
   public journeeUsers: Observable<IJournee[]>;
@@ -39,18 +38,6 @@ export class PariComponent implements OnInit {
   public constructor(private authService: AuthService, private firestore: AngularFirestore) { }
 
   public ngOnInit(): void {
-    this.color = "";
-    let data = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
-
-    this.authService.user.subscribe((user)=> {
-      this.journeeUsers = data.collection<IJournee>('J1', (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
-        map(e=> {
-          return e.map(r => {
-            return {id: r.payload.doc.id, ... r.payload.doc.data()};
-          })
-        }))
-    });
-
     const url = `http://51.178.38.151/api/JSON/saison.json`;
     fetch(url)
       .then(response => response.json())
@@ -60,14 +47,38 @@ export class PariComponent implements OnInit {
         for(i = 0; i < data.length; i++) {
           if(data[i].score_domicile == null && data[i].score_exterieur == null && trouve==0) {
             this.journee = Number(data[i].journee);
+            let dataDoc = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
+            let journeeActuelle = "J" + this.journee;
+            this.authService.user.subscribe((user)=> {
+              this.journeeUsers = dataDoc.collection<IJournee>(journeeActuelle, (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
+                map(e=> {
+                  return e.map(r => {
+                    return {id: r.payload.doc.id, ... r.payload.doc.data()};
+                  })
+                }))
+            });
             trouve = 1;
           }
         }
       });
+      
+    /*let data = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
+    let journeeActuelle = "J" + this.journee;
+    console.log(journeeActuelle);
+
+    this.authService.user.subscribe((user)=> {
+      this.journeeUsers = data.collection<IJournee>(journeeActuelle, (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
+        map(e=> {
+          return e.map(r => {
+            return {id: r.payload.doc.id, ... r.payload.doc.data()};
+          })
+        }))
+    });*/
   }
 
   public modify(data: IJournee): void {
-    this.firestore.doc("journees/bA9Ka0MiheziTMthCYRc/J1/" + data.id).update({scoreDom: data.scoreDom, scoreExt: data.scoreExt});
+    console.log
+    this.firestore.doc("journees/bA9Ka0MiheziTMthCYRc/J" + this.journee + "/" + data.id).update({scoreDom: data.scoreDom, scoreExt: data.scoreExt});
   }
 
 }

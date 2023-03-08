@@ -6,6 +6,16 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { IUser } from '../models/user.model';
 
+interface IPari {
+  id?: string;
+  email: string;
+  equipeDom: string;
+  equipeExt: String;
+  scoreDom?: number;
+  scoreExt?: number;
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -31,6 +41,26 @@ export class AuthService {
         }).catch((error) => {
           window.alert("Erreur lors de la création du compte.");
         });
+
+        // création des paris dans firebase lors de la création du compte
+        const url = `http://51.178.38.151/api/JSON/saison.json`;
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          let i;
+          for(i = 0; i < data.length; i++) {
+            if(data[i].score_domicile == null && data[i].score_exterieur == null) {
+              let journeeActuelle = "J" + Number(data[i].journee);
+              let valeur: IPari = {email: email, equipeDom: data[i].clubDesktop_domicile, equipeExt: data[i].clubDesktop_exterieur};
+             
+              this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc").collection(journeeActuelle).add(valeur).then(() => {
+                console.log("Pari crée !");
+              }).catch((error) => {
+                window.alert("Erreur lors de la création du pari.");
+              });;
+            };
+          }
+        })
         this.router.navigate(['/auth/connexion-component']);
       }).catch((error) => {
         window.alert(error.message)
@@ -38,7 +68,7 @@ export class AuthService {
     }
 
   // se connecter avec l'email et le mot de passe
-  public  signIn(email: string, password: string) {
+  public signIn(email: string, password: string) {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .then((result) => {
          window.alert("Tu es de retour parmi nous ! Viens décrocher la 1ère place !");

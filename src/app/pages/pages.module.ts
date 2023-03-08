@@ -8,11 +8,13 @@ import { ClassementComponent } from './classement/classement.component';
 import { ReglesComponent } from './regles/regles.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { PariComponent } from './pari/pari.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
   {path: 'classement-component', component: ClassementComponent},
   {path: 'match-component', component: MatchComponent},
   {path: 'pari-component', component: PariComponent},
+  {path: 'accueil-component', component: AccueilComponent},
   {path: '', redirectTo: 'match-component'}
 ];
 
@@ -23,7 +25,8 @@ const routes: Routes = [
     ClassementComponent,
     ReglesComponent,
     MatchComponent,
-    PariComponent
+    PariComponent,
+    AccueilComponent
   ],
   imports: [RouterModule.forChild(routes), MatTableModule, SharedModule, MatPaginatorModule],
   exports: [RouterModule],
