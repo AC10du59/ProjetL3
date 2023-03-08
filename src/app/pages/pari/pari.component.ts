@@ -43,10 +43,9 @@ export class PariComponent implements OnInit {
       .then(response => response.json())
       .then(data => {
         let i;
-        let trouve = 0;
         for(i = 0; i < data.length; i++) {
-          if(data[i].score_domicile == null && data[i].score_exterieur == null && trouve==0) {
-            this.journee = Number(data[i].journee);
+          if(data[i].score_domicile != null && data[i].score_exterieur != null) {
+            this.journee = Number(data[i].journee) + 1;
             let dataDoc = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
             let journeeActuelle = "J" + this.journee;
             this.authService.user.subscribe((user)=> {
@@ -57,7 +56,6 @@ export class PariComponent implements OnInit {
                   })
                 }))
             });
-            trouve = 1;
           }
         }
       });
