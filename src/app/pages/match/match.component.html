@@ -43,16 +43,6 @@
           mat-cell *matCellDef="let match"> {{match.clubDesktop_exterieur}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="pari">
-      <th mat-header-cell *matHeaderCellDef> Mon pari </th>
-      <td mat-cell *matCellDef="let match"> 2 - 1 </td>
-    </ng-container>
-
-    <ng-container matColumnDef="resultat">
-      <th mat-header-cell *matHeaderCellDef> Résultat </th>
-      <td mat-cell *matCellDef="let match"> {{match.resultat}} </td>
-    </ng-container>
-
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
