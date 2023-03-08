@@ -1,13 +1,7 @@
 <p class="titre">Résultats des matchs</p>
 
 <img class="image" src="../../../assets/img/logoL1.png" alt="image"/>
-<div *ngIf="pageEvent; else elseBlock">
-  <p class="journee">Journée {{journeeActuelle()}}</p>
-</div>
-<ng-template #elseBlock>
-  <p class="journee">Journée {{journeeActuelle()}}</p>
-</ng-template>
-
+<p class="journee">Journée {{journeeActuelle()}}</p>
 
 <div>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
