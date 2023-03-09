@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CoreModule } from './core/core.module';
 import { CommunauteComponent } from './pages/communaute/communaute.component';
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -38,8 +39,9 @@ import { CommunauteComponent } from './pages/communaute/communaute.component';
     FormsModule,
     MatInputModule,
     MatDialogModule,
-    CoreModule
-    ],
+    CoreModule,
+    MatTableModule
+  ],
   providers: [AuthService],
   bootstrap: [AppComponent],
 })

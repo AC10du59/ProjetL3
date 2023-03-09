@@ -1,0 +1,120 @@
+.row {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-classement {
+  width: 75%;
+  min-width: 60%;
+  margin-right: 5%;
+}
+
+.col-chat {
+  width: 20%;
+}
+
+.table-classement {
+  border: 2px solid #3646a8;
+  border-radius: 5px;
+  border-collapse: collapse;
+  margin: 2px;
+}
+
+
+.caption-classement {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration: blink;
+  margin-bottom: 10px;
+}
+
+.th-classement {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #3646a8;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 2px solid #3646a8;
+}
+
+.td-classement {
+  text-align: center;
+  font-size: 15px;
+  color: #3646a8;
+  font-weight: bold;
+  padding-left: 100px;
+  border-bottom: 1px solid #3646a8;
+}
+
+
+.col-chat {
+  border: 2px solid #3646a8;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.chat-box {
+  max-width: 275px;
+  border: 1px solid #3646a8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.label-chat {
+  color: #3646a8;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-list div {
+  border: 1px dashed #3646a8;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-box form {
+  border: 1px solid #3646a8;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-box form textarea {
+  padding: 1px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px dashed #3646a8;
+  border-radius: 5px;
+}
+
+.chat-box form button {
+  background-color: #3646a8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.chat-box form button:hover {
+  background-color: #293a80;
+}
+
+

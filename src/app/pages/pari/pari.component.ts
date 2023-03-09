@@ -59,7 +59,7 @@ export class PariComponent implements OnInit {
           }
         }
       });
-      
+
     /*let data = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
     let journeeActuelle = "J" + this.journee;
     console.log(journeeActuelle);

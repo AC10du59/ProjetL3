@@ -1,18 +1,18 @@
 .equipeColor {
     color: #3646a8 !important;
   }
-  
+
   .equipe {
     user-select: none;
     font-weight: bold;
     transition: 0.1s;
   }
-  
+
   .pagination {
     width: 75%;
     margin: auto;
   }
-  
+
   .titre {
     margin: 0 auto 35px auto;
     width: 500px;
@@ -21,7 +21,7 @@
     font-weight: bold;
     text-decoration: blink;
   }
-  
+
   .journee {
     margin: 40px auto 40px auto;
     padding-top: 9px;
@@ -34,7 +34,7 @@
     text-decoration: blink;
     color: #3646a8;
   }
-  
+
   .image {
     display: block;
     margin-left: auto;
@@ -43,7 +43,7 @@
     width: 60px;
     height: 87px;
   }
-  
+
   th{
     text-align: center !important;
     font-size: 18px;
@@ -51,14 +51,14 @@
     color: #3646a8;
     font-weight: bold;
   }
-  
+
   td{
     text-align: center;
     font-size: 15px;
     color: #3646a8;
     font-weight: bold;
   }
-  
+
   table{
     width: 75%;
     margin: auto;
@@ -74,3 +74,9 @@
     margin-top: 75px;
     color: white;
   }
+.score-input {
+  border: 2px solid #3646a8;
+  border-radius: 5px;
+  padding: 5px;
+}
+
