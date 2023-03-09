@@ -16,10 +16,12 @@ import { AuthService } from './core/services/auth.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CoreModule } from './core/core.module';
+import { CommunauteComponent } from './pages/communaute/communaute.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CommunauteComponent,
     ],
   imports: [
     BrowserModule,
