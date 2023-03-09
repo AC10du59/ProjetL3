@@ -1,6 +1,17 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div2 { grid-area: 1 / 3 / 2 / 4; }
+  .div1 { grid-area: 1 / 5 / 2 / 6; }
+
 button, h1{
   display: block;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -8,7 +19,7 @@ h1{
   font-weight: bold;
   text-decoration: underline;
   text-decoration: blink;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 .ok{
@@ -21,6 +32,24 @@ h1{
 .mat-form-field{
   display: flex;
   justify-content: center;
-  padding: 15px 0px 15px 0px;
+  padding-bottom: 20px;
   width: 100%;
 }
+
+#mdp {
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  width: 150px;
+}
+
+#test {
+  border: solid;
+}
+
+.image {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+

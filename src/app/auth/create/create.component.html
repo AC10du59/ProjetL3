@@ -1,24 +1,33 @@
-<form [formGroup]="profileForm">
-  <h1>Création du compte</h1>
+<div class="parent">
+  <div class="div1">
+    <form [formGroup]="profileForm">
+      <h1>Création du compte</h1>
+    
+      <mat-form-field appearance="outline" class="pseudo">
+        <mat-label>Pseudo</mat-label>
+        <input matInput formControlName="pseudo">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline" class="email">
+        <mat-label>Adresse mail</mat-label>
+        <input matInput placeholder="Ex. pat@gmail.com" formControlName="email">
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label>Mot de passe</mat-label>
+        <input matInput formControlName="mdp" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    
+    </form>
+    
+    <button mat-flat-button class="ok" type="submit" color="primary" (click)="onSubmit()">Valider</button>
 
-  <mat-form-field class="pseudo">
-    <mat-label>Pseudo</mat-label>
-    <textarea matInput formControlName="pseudo"></textarea>
-  </mat-form-field>
-  
-    <mat-form-field class="email">
-      <mat-label>Adresse mail</mat-label>
-      <textarea matInput placeholder="Ex. pat@gmail.com" formControlName="email"></textarea>
-    </mat-form-field>
+  </div>
+  <div class="div2">
+    <img class="image" src="../../../assets/img/createIMG.webp" alt="image"/>
+  </div>
+</div>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Mot de passe</mat-label>
-      <input matInput formControlName="mdp" [type]="hide ? 'password' : 'text'">
-      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-
-  </form>
-
-  <button mat-flat-button class="ok" type="submit" color="primary" (click)="onSubmit()">Valider</button>

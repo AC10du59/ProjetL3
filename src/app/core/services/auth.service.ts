@@ -78,8 +78,18 @@ export class AuthService {
         window.alert(error.message)
       })
   }
- 
 
+  // réinitialiser mot de passe
+  public resetPassword(email: string) {
+    return this.afAuth.sendPasswordResetEmail(email)
+      .then(() => {
+        window.alert("Tu as reçu un mail pour réinitialiser ton mot de passe !");
+      })
+      .catch((error) => {
+        window.alert(error.message);
+      });
+    }
+ 
   
   // se déconnecter
   public signOutUser() {

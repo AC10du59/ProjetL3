@@ -28,10 +28,13 @@ export class ConnexionComponent implements OnInit, CanActivate {
   public ngOnInit(): void {
   }
 
+  public resetPassword(): void {
+    this.authService.resetPassword(this.profileCoForm.get("email")?.value);
+  }
 
   public onSubmit(): void {
     this.profileCoForm.markAllAsTouched();
-
+    
     if (this.profileCoForm.valid) {
       this.authService.signIn(this.profileCoForm.get("email")?.value, this.profileCoForm.get("mdp")?.value);
     }
@@ -39,6 +42,7 @@ export class ConnexionComponent implements OnInit, CanActivate {
       window.alert("Formulaire invalide !");
     }
   }
+
   public canActivate() {
     return true;
   }

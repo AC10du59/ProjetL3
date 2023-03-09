@@ -12,6 +12,12 @@
 
 }
 
+#barre {
+  height: 85px;
+  padding-top: 8px;
+}
+
+
 .buttonTop{
   margin-left: 12px;
 }
