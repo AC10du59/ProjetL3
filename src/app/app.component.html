@@ -13,8 +13,10 @@
         <a class="buttonTop" mat-stroked-button (click)="openDialogRegles()"> Règles </a>
       </section>
       <div *ngIf="!connect(); else elseBlockDeco">
-        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/create-component'" routerLinkActive="active"> Création compte </a>
-        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
+        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/create-component'" routerLinkActive="active">
+          Création compte </a>
+        <a class="buttonTop" mat-stroked-button [routerLink]="'/auth/connexion-component'" routerLinkActive="active">
+          Connexion </a>
       </div>
       <ng-template #elseBlockDeco>
         <button class="buttonTop" mat-stroked-button (click)="deco()">Déconnexion</button>
@@ -34,6 +36,8 @@
         <a mat-list-item [routerLink]="'/matchs/match-component'" routerLinkActive="active"> Résultats </a>
         <a mat-list-item [routerLink]="'/matchs/pari-component'" routerLinkActive="active"> Mes paris </a>
         <a mat-list-item [routerLink]="'/matchs/communaute-component'" routerLinkActive="active"> Communaute </a>
+        <a mat-list-item [routerLink]="'/matchs/creation-communaute-component'" routerLinkActive="active"> Crée
+          commu </a>
         <a mat-list-item [routerLink]="'/matchs/classement-component'" routerLinkActive="active"> Classement </a>
 
       </div>
