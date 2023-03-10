@@ -21,11 +21,10 @@ export class ChatService {
     return this.messageCollection.valueChanges({idField: 'id'});
   }
 
-  public async addMessage(nom: string, email: string, msg: string, date: any): Promise<void> {
+  public async addMessage(nom: string, msg: string, date: any): Promise<void> {
     const user = firebase.auth().currentUser;
     const message: IMessage = {
       nom,
-      email,
       msg,
       date: date.toISOString()
     };

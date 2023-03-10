@@ -5,6 +5,7 @@ import {map} from 'rxjs/operators';
 import {IUser} from 'src/app/core/models/user.model';
 import {ChatService} from 'src/app/core/services/chat.service';
 import {IMessage} from 'src/app/core/models/message.model';
+import {AuthService} from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-communaute',
@@ -16,11 +17,14 @@ export class CommunauteComponent implements OnInit {
   public messages: Observable<IMessage[]>;
   public message = '';
 
-
   public headElements = ['Rang', 'Pseudo', 'Points'];
   public displayedColumns: string[] = ['rang', 'pseudo', 'points'];
 
-  constructor(private firestore: AngularFirestore, private chatService: ChatService) {
+  constructor(
+    private firestore: AngularFirestore,
+    private chatService: ChatService,
+    private authService: AuthService
+  ) {
   }
 
   ngOnInit(): void {
@@ -40,8 +44,8 @@ export class CommunauteComponent implements OnInit {
     });
     let rangCompteur = 1;
     for (let i = 0; i < tableau.length; i++) {
-      if (i != 0) {
-        if (tableau[i].points != tableau[i - 1].points) {
+      if (i !== 0) {
+        if (tableau[i].points !== tableau[i - 1].points) {
           tableau[i].rang = '' + rangCompteur;
         } else {
           tableau[i].rang = '-';
@@ -55,14 +59,14 @@ export class CommunauteComponent implements OnInit {
   }
 
   public sendMessage(): void {
-    const nom = 'Anonymous';
-    const email = 'anonymous@example.com';
     const date = new Date();
-    this.chatService.addMessage(nom, email, this.message, date).then(() => {
-      this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
-    }).catch(error => {
+    this.authService.user.subscribe((user) => {
+      const nom = user.email || 'annonyme';
+      this.chatService.addMessage(nom, this.message, date).then(() => {
+        this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
+      }).catch(error => {
+      });
     });
   }
-
 
 }
