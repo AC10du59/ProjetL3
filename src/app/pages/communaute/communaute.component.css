@@ -13,7 +13,7 @@
 
 .col-chat {
   width: 20%;
-}
+}é
 
 .table-classement {
   border: 2px solid #3646a8;
@@ -26,7 +26,6 @@
 .caption-classement {
   font-size: 25px;
   font-weight: bold;
-  text-decoration: underline;
   text-decoration: blink;
   margin-bottom: 10px;
 }

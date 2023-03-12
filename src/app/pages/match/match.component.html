@@ -1,4 +1,4 @@
-<p class="titre">Résultats des matchs</p>
+<h2>Résultats des matchs</h2>
 
 <img class="image" src="../../../assets/img/logoL1.png" alt="image"/>
 <p class="journee">Journée {{journeeActuelle()}}</p>
@@ -7,7 +7,7 @@
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <!-- Equipe 1 -->
     <ng-container matColumnDef="clubDesktop_domicile">
-      <th mat-header-cell *matHeaderCellDef> Equipe domicile </th>
+      <th mat-header-cell *matHeaderCellDef> Equipe domicile</th>
       <td class="equipeColor equipe"
           (mouseenter)="colorHomeTeamOnMouse(match.equipeDomicile)"
           (mouseleave)="color = ''"
@@ -29,7 +29,7 @@
 
     <!-- Equipe 2 -->
     <ng-container matColumnDef="clubDesktop_exterieur">
-      <th mat-header-cell *matHeaderCellDef> Equipe extérieur </th>
+      <th mat-header-cell *matHeaderCellDef> Equipe extérieur</th>
       <td class="equipeColor equipe"
           (mouseenter)="colorAwayTeamOnMouse(match.equipeExterieur)"
           (mouseleave)="color = ''"
@@ -40,7 +40,8 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <mat-paginator class="pagination" [pageSize]="10" (page)="onChangePage($event)" [length]="380" showFirstLastButtons></mat-paginator>
+  <mat-paginator class="pagination" [pageSize]="10" (page)="onChangePage($event)" [length]="380"
+                 showFirstLastButtons></mat-paginator>
 </div>
 
 <p id="space">.</p>

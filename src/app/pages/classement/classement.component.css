@@ -1,10 +1,18 @@
-caption{
-    margin-bottom: 80px;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration: blink;
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #3646a8;
+  margin-bottom: 20px;
+  border: 1px dashed #3646a8;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 th{
     text-align: center !important;
@@ -20,7 +28,7 @@ td{
     color: #3646a8;
     font-weight: bold;
 }
-  
+
 table{
     width: 85%;
     margin: auto;

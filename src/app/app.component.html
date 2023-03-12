@@ -36,8 +36,6 @@
         <a mat-list-item [routerLink]="'/matchs/match-component'" routerLinkActive="active"> Résultats </a>
         <a mat-list-item [routerLink]="'/matchs/pari-component'" routerLinkActive="active"> Mes paris </a>
         <a mat-list-item [routerLink]="'/matchs/communaute-component'" routerLinkActive="active"> Communaute </a>
-        <a mat-list-item [routerLink]="'/matchs/creation-communaute-component'" routerLinkActive="active"> Crée
-          commu </a>
         <a mat-list-item [routerLink]="'/matchs/classement-component'" routerLinkActive="active"> Classement </a>
 
       </div>
@@ -51,7 +49,7 @@
 
 
   <mat-sidenav-content>
-    <p>Viens décrocher la première place !</p>
+    <h2>Viens décrocher la première place !</h2>
 
     <div style="height: 63vh;">
       <router-outlet></router-outlet>
@@ -60,5 +58,5 @@
 </mat-sidenav-container>
 
 <footer>
-  <h1>CKR FOOT | Aurélien Carray - Estebann Koenig - Enguéran Raout | UPHF</h1>
+  <p>CKR FOOT | Aurélien Carray - Estebann Koenig - Enguéran Raout | UPHF</p>
 </footer>

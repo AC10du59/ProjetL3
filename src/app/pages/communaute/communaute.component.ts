@@ -1,11 +1,13 @@
-import {Component, OnInit} from '@angular/core';
-import {AngularFirestore} from '@angular/fire/firestore';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
-import {IUser} from 'src/app/core/models/user.model';
-import {ChatService} from 'src/app/core/services/chat.service';
-import {IMessage} from 'src/app/core/models/message.model';
-import {AuthService} from 'src/app/core/services/auth.service';
+import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { IUser } from 'src/app/core/models/user.model';
+import { ChatService } from 'src/app/core/services/chat.service';
+import { IMessage } from 'src/app/core/models/message.model';
+import { AuthService } from 'src/app/core/services/auth.service';
+import {ICommunaute} from '../../core/models/communaute.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-communaute',
@@ -23,20 +25,42 @@ export class CommunauteComponent implements OnInit {
   constructor(
     private firestore: AngularFirestore,
     private chatService: ChatService,
-    private authService: AuthService
-  ) {
-  }
+    private authService: AuthService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    this.users = this.firestore.collection<IUser>('users').snapshotChanges().pipe(
-      map(e => {
-        return this.trier(e.map(r => {
-          return {id: r.payload.doc.id, ...r.payload.doc.data()};
-        }));
+    this.authService.user.subscribe((user) => {
+      this.firestore.collection<ICommunaute>('communaute', (ref) =>
+        ref.where('emails', 'array-contains', user.email)
+      ).valueChanges().subscribe((communautes) => {
+        if (communautes.length === 0) {
+          this.router.navigateByUrl('/communaute/creation-communaute');
+        }
+      });
+    });
+
+    this.users = this.firestore
+      .collection<IUser>('users')
+      .snapshotChanges()
+      .pipe(
+        map((e) => {
+          return this.trier(
+            e.map((r) => {
+              return { id: r.payload.doc.id, ...r.payload.doc.data() };
+            })
+          );
+        })
+      );
+
+    this.messages = this.chatService.getMessages().pipe(
+      map((messages) => {
+        // Inverser l'ordre des messages
+        return messages.reverse();
       })
     );
-    this.messages = this.chatService.getMessages();
   }
+
 
   public trier(tableau: IUser[]): IUser[] {
     tableau.sort((a, b) => {
@@ -61,12 +85,25 @@ export class CommunauteComponent implements OnInit {
   public sendMessage(): void {
     const date = new Date();
     this.authService.user.subscribe((user) => {
-      const nom = user.email || 'annonyme';
-      this.chatService.addMessage(nom, this.message, date).then(() => {
-        this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
-      }).catch(error => {
-      });
+      const nom = user.email || 'anonyme';
+      const chatBox = document.querySelector('.chat-box .message-list');
+      const atBottom = chatBox
+        ? chatBox.scrollTop === chatBox.scrollHeight - chatBox.clientHeight
+        : false;
+      if (!atBottom && chatBox) {
+        chatBox.scrollTo(0, chatBox.scrollHeight);
+      }
+      setTimeout(() => {
+        this.chatService
+          .addMessage(nom, this.message, date)
+          .then(() => {
+            this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
+            if (chatBox) {
+              chatBox.scrollTo(0, chatBox.scrollHeight);
+            }
+          })
+          .catch((error) => {});
+      }, 50);
     });
   }
-
 }
