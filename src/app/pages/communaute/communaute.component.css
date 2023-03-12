@@ -5,23 +5,12 @@
   justify-content: space-between;
 }
 
-.col-classement {
-  width: 75%;
-  min-width: 60%;
-  margin-right: 5%;
-}
-
-.col-chat {
-  width: 20%;
-}é
-
 .table-classement {
   border: 2px solid #3646a8;
   border-radius: 5px;
   border-collapse: collapse;
   margin: 2px;
 }
-
 
 .caption-classement {
   font-size: 25px;
@@ -50,14 +39,7 @@
 }
 
 
-.col-chat {
-  border: 2px solid #3646a8;
-  border-radius: 5px;
-  margin: 2px;
-}
-
 .chat-box {
-  max-width: 275px;
   border: 1px solid #3646a8;
   padding: 10px;
   border-radius: 5px;
@@ -70,7 +52,7 @@
 }
 
 .message-list {
-  max-height: 400px;
+  max-height: 40vh;
   overflow-y: auto;
   margin-bottom: 10px;
   padding: 10px;
@@ -116,4 +98,55 @@
   background-color: #293a80;
 }
 
+.container {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.container form {
+  border: 1px solid #3646a8;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.container input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 2vh;
+  color: #3646a8;
+}
+
+.container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3646a8;
+}
+
+.container button {
+  background-color: #3646a8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.col-classement {
+  width: 50vw;
+  min-width: 60%;
+  margin-right: 5%;
+}
+
+.col-chat {
+  width: 50vw;
+}
 

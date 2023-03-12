@@ -1,13 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { IUser } from 'src/app/core/models/user.model';
-import { ChatService } from 'src/app/core/services/chat.service';
-import { IMessage } from 'src/app/core/models/message.model';
-import { AuthService } from 'src/app/core/services/auth.service';
+import {Component, OnInit} from '@angular/core';
+import {AngularFirestore} from '@angular/fire/firestore';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {IUser} from 'src/app/core/models/user.model';
+import {ChatService} from 'src/app/core/services/chat.service';
+import {IMessage} from 'src/app/core/models/message.model';
+import {AuthService} from 'src/app/core/services/auth.service';
 import {ICommunaute} from '../../core/models/communaute.model';
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
+import {FormGroup} from '@angular/forms';
+
+interface IInvitation {
+  id: string;
+  emailInvitation: string;
+  emailEnvoie: string;
+  idCommunaute: string;
+  dateCreation: Date;
+  acceptee: boolean;
+}
 
 @Component({
   selector: 'app-communaute',
@@ -15,6 +25,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./communaute.component.css']
 })
 export class CommunauteComponent implements OnInit {
+  invitationForm: FormGroup;
   public users: Observable<IUser[]>;
   public messages: Observable<IMessage[]>;
   public message = '';
@@ -27,7 +38,8 @@ export class CommunauteComponent implements OnInit {
     private chatService: ChatService,
     private authService: AuthService,
     private router: Router
-  ) {}
+  ) {
+  }
 
   ngOnInit(): void {
     this.authService.user.subscribe((user) => {
@@ -47,7 +59,7 @@ export class CommunauteComponent implements OnInit {
         map((e) => {
           return this.trier(
             e.map((r) => {
-              return { id: r.payload.doc.id, ...r.payload.doc.data() };
+              return {id: r.payload.doc.id, ...r.payload.doc.data()};
             })
           );
         })
@@ -102,8 +114,33 @@ export class CommunauteComponent implements OnInit {
               chatBox.scrollTo(0, chatBox.scrollHeight);
             }
           })
-          .catch((error) => {});
+          .catch((error) => {
+          });
       }, 50);
     });
   }
+
+  inviterAmi(): void {
+    const invitationRef = this.firestore.collection<IInvitation>('invitation');
+    this.authService.user.subscribe((user) => {
+      const nouvelleInvitation = {
+        id: this.firestore.createId(),
+        emailInvitation: this.invitationForm.value.email,
+        emailEnvoie: user.email,
+        idCommunaute: 'TODO: récupérer l\'id de la communauté en cours',
+        dateCreation: new Date(),
+        acceptee: false,
+      };
+      invitationRef.add(nouvelleInvitation)
+        .then(() => {
+          console.log('Invitation envoyée avec succès');
+          this.invitationForm.reset();
+        })
+        .catch((erreur) => {
+          console.error('Erreur lors de l\'envoi de l\'invitation', erreur);
+        });
+    });
+  }
+
+
 }

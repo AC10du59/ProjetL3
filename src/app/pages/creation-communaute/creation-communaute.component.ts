@@ -5,6 +5,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
 import { Router } from '@angular/router';
 
 interface ICommunaute {
+  id: string;
   nom: string;
   emails: string[];
 }
@@ -40,15 +41,16 @@ export class CreationCommunauteComponent implements OnInit {
     });
   }
 
-
   creerCommunaute(): void {
     const communauteRef = this.firestore.collection<ICommunaute>('communaute');
     this.authService.user.subscribe((user) => {
+      const id = this.firestore.createId(); // Utiliser createId() pour générer un id unique
       const nouvelleCommunaute = {
+        id,
         nom: this.creationCommunauteForm.value.nom,
         emails: [user.email]
       };
-      communauteRef.add(nouvelleCommunaute)
+      communauteRef.doc(id).set(nouvelleCommunaute)
         .then(() => {
           console.log('Communauté créée avec succès');
           this.router.navigateByUrl('/communaute/communaute');
