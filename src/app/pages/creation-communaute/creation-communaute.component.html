@@ -1,0 +1,9 @@
+<h2>Créer une communauté</h2>
+
+<form [formGroup]="creationCommunauteForm" (ngSubmit)="creerCommunaute()">
+  <div>
+    <label for="nom">Nom de la communauté</label>
+    <input type="text" id="nom" formControlName="nom">
+  </div>
+  <button type="submit">Créer</button>
+</form>

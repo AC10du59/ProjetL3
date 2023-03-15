@@ -1,8 +1,31 @@
+header{
+  margin-top: -8px;
+  margin-left: -8px;
+  width: 100vw;
+}
+
+h2 {
+  padding: 10px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3646a8;
+  border: 2px dashed #3646a8;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .example-spacer {
   flex: 1 1 auto;
 }
 
-.title{
+.title {
   display: block;
   margin: 3px 0px 0px 30px;
   font-size: 25px;
@@ -13,31 +36,21 @@
 }
 
 #barre {
-  height: 85px;
+  height: 8vh;
   padding-top: 8px;
 }
 
 
-.buttonTop{
+.buttonTop {
   margin-left: 12px;
 }
 
-img{
+img {
   max-width: 100%;
   max-height: 100%;
 }
 
-p{
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  line-height: 5em;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration: blink;
-}
-
-span{
+span {
   display: block;
   font-size: 20px;
   text-align: center;
@@ -45,16 +58,22 @@ span{
   text-decoration: underline;
 }
 
-footer{
+footer {
   display: block;
-  font-size: 20px;
+  font-size: 1em;
   text-align: center;
-  margin-top: 8px;
+  color: #293a80;
 }
 
+mat-sidenav-container{
+  height: 87vh;
+}
 
 mat-sidenav {
   width: 150px;
   min-width: 150px;
   max-width: 150px;
 }
+
+
+

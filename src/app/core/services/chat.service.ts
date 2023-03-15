@@ -1,34 +1,38 @@
-import {Injectable} from '@angular/core';
-import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
-import {IMessage} from '../models/message.model';
-import {Observable} from 'rxjs';
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import { Injectable } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { IMessage } from '../models/message.model';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import firebase from "firebase";
+import DocumentReference = firebase.firestore.DocumentReference;
 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
-
-  private messageCollection: AngularFirestoreCollection<IMessage>;
+  private messagesCollection: AngularFirestoreCollection<IMessage>;
 
   constructor(private firestore: AngularFirestore) {
-    this.messageCollection = this.firestore.collection<IMessage>('messages');
+    this.messagesCollection = this.firestore.collection<IMessage>('messages');
   }
 
   public getMessages(): Observable<IMessage[]> {
-    return this.messageCollection.valueChanges({idField: 'id'});
+    return this.messagesCollection.valueChanges({idField: 'id'}).pipe(
+      map(messages => {
+        messages.sort((a, b) => {
+          return b.date.seconds - a.date.seconds;
+        });
+        return messages;
+      })
+    );
   }
 
-  public async addMessage(nom: string, email: string, msg: string, date: any): Promise<void> {
-    const user = firebase.auth().currentUser;
+  public addMessage(nom: string, msg: string, date: Date): Promise<DocumentReference<IMessage>> {
     const message: IMessage = {
       nom,
-      email,
       msg,
-      date: date.toISOString()
+      date
     };
-    await this.messageCollection.add(message);
+    return this.messagesCollection.add(message);
   }
 }

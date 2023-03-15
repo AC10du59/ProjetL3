@@ -32,8 +32,8 @@ export class PariComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   public pageEvent: PageEvent;
   public journeeUsers: Observable<IJournee[]>;
-  public journee: Number;
-  public scoreDomModif: Number;
+  public journee: number;
+  public scoreDomModif: number;
 
   public constructor(private authService: AuthService, private firestore: AngularFirestore) { }
 

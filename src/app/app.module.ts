@@ -9,21 +9,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
 import { AuthService } from './core/services/auth.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CoreModule } from './core/core.module';
+import { MatTableModule } from '@angular/material/table';
+import { CreationCommunauteComponent } from './pages/creation-communaute/creation-communaute.component';
 import { CommunauteComponent } from './pages/communaute/communaute.component';
-import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
     AppComponent,
     CommunauteComponent,
-    ],
+    CreationCommunauteComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -43,6 +44,6 @@ import {MatTableModule} from "@angular/material/table";
     MatTableModule
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
