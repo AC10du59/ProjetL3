@@ -59,23 +59,9 @@ export class PariComponent implements OnInit {
           }
         }
       });
-
-    /*let data = this.firestore.collection("journees").doc("bA9Ka0MiheziTMthCYRc");
-    let journeeActuelle = "J" + this.journee;
-    console.log(journeeActuelle);
-
-    this.authService.user.subscribe((user)=> {
-      this.journeeUsers = data.collection<IJournee>(journeeActuelle, (ref) => ref.where("email", "==", user.email)).snapshotChanges().pipe(
-        map(e=> {
-          return e.map(r => {
-            return {id: r.payload.doc.id, ... r.payload.doc.data()};
-          })
-        }))
-    });*/
   }
 
   public modify(data: IJournee): void {
-    console.log
     this.firestore.doc("journees/bA9Ka0MiheziTMthCYRc/J" + this.journee + "/" + data.id).update({scoreDom: data.scoreDom, scoreExt: data.scoreExt});
   }
 
