@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {map, pluck, shareReplay, switchMap, take, tap} from 'rxjs/operators';
 import {IUser} from 'src/app/core/models/user.model';
 import {ChatService} from 'src/app/core/services/chat.service';
 import {IMessage} from 'src/app/core/models/message.model';
@@ -52,18 +52,13 @@ export class CommunauteComponent implements OnInit {
       });
     });
 
-    this.users = this.firestore
-      .collection<IUser>('users')
-      .snapshotChanges()
-      .pipe(
-        map((e) => {
-          return this.trier(
-            e.map((r) => {
-              return {id: r.payload.doc.id, ...r.payload.doc.data()};
-            })
-          );
-        })
-      );
+    this.users = this.firestore.collection<IUser>('users').snapshotChanges().pipe(
+      take(1),
+      map(e=> {
+        return this.trier(e.map(r => {
+          return {id: r.payload.doc.id, ... r.payload.doc.data()};
+        }))
+      }));
 
     this.messages = this.chatService.getMessages().pipe(
       map((messages) => {
@@ -75,6 +70,14 @@ export class CommunauteComponent implements OnInit {
 
 
   public trier(tableau: IUser[]): IUser[] {
+    console.log(tableau);
+
+    for (let i = tableau.length - 1; i >= 0; i--) {
+      if (tableau[i].communaute !== 'UPHF') {
+        tableau.splice(i, 1);
+      }
+    }
+    
     tableau.sort((a, b) => {
       return b.points - a.points;
     });
