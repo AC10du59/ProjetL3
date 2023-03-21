@@ -1,14 +1,64 @@
 .titre {
-    margin: 0 auto 35px auto;
-    width: 500px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: blink;
-  }
+  margin: 0 auto 35px auto;
+  width: 500px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: blink;
+}
 
-img { 
-    display: block;
-    width: 20%;
-    margin: auto;
+.image { 
+  display: block;
+  width: 80px;
+  margin: auto;
+  
+}
+
+.titre{
+  margin: 0 auto 35px auto;
+  width: 500px;
+  text-align:center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: blink;
+  text-decoration: underline;
+  
+
+}
+
+h1{
+margin: 0 auto 35px auto;
+width: 500px;
+text-align:center;
+font-size: 25px;
+font-weight: bold;
+text-decoration: blink;
+text-decoration: underline;
+
+}
+
+
+.long{
+margin:auto;
+width: 500px;
+text-align: center;
+font-size: 17px;  
+text-decoration: blink;
+margin-left: 120px;
+
+}
+
+.fond{
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.ligue{
+display:block;
+  width: 600px;
+  margin: auto;
+  
 }
