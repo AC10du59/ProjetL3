@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {Observable} from 'rxjs';
-import {map, pluck, shareReplay, switchMap, take, tap} from 'rxjs/operators';
+import {map, take} from 'rxjs/operators';
 import {IUser} from 'src/app/core/models/user.model';
 import {ChatService} from 'src/app/core/services/chat.service';
 import {IMessage} from 'src/app/core/models/message.model';
@@ -9,15 +9,6 @@ import {AuthService} from 'src/app/core/services/auth.service';
 import {ICommunaute} from '../../core/models/communaute.model';
 import {Router} from '@angular/router';
 import {FormGroup} from '@angular/forms';
-
-interface IInvitation {
-  id: string;
-  emailInvitation: string;
-  emailEnvoie: string;
-  idCommunaute: string;
-  dateCreation: Date;
-  acceptee: boolean;
-}
 
 @Component({
   selector: 'app-communaute',
@@ -29,6 +20,7 @@ export class CommunauteComponent implements OnInit {
   public users: Observable<IUser[]>;
   public messages: Observable<IMessage[]>;
   public message = '';
+  public communaute = '';
 
   public headElements = ['Rang', 'Pseudo', 'Points'];
   public displayedColumns: string[] = ['rang', 'pseudo', 'points'];
@@ -49,31 +41,28 @@ export class CommunauteComponent implements OnInit {
         if (communautes.length === 0) {
           this.router.navigateByUrl('/communaute/creation-communaute');
         }
+        this.communaute = communautes[0].nom;
+        this.messages = this.chatService.getMessages(this.communaute).pipe(
+          map((messages) => {
+            // Inverser l'ordre des messages
+            return messages.reverse();
+          })
+        );
+        this.users = this.firestore.collection<IUser>('users').snapshotChanges().pipe(
+          take(1),
+          map(e=> {
+            return this.trier(e.map(r => {
+              return {id: r.payload.doc.id, ... r.payload.doc.data()};
+            }))
+          }));
       });
     });
-
-    this.users = this.firestore.collection<IUser>('users').snapshotChanges().pipe(
-      take(1),
-      map(e=> {
-        return this.trier(e.map(r => {
-          return {id: r.payload.doc.id, ... r.payload.doc.data()};
-        }))
-      }));
-
-    this.messages = this.chatService.getMessages().pipe(
-      map((messages) => {
-        // Inverser l'ordre des messages
-        return messages.reverse();
-      })
-    );
   }
 
 
   public trier(tableau: IUser[]): IUser[] {
-    console.log(tableau);
-
     for (let i = tableau.length - 1; i >= 0; i--) {
-      if (tableau[i].communaute !== 'UPHF') {
+      if (tableau[i].communaute !== this.communaute) {
         tableau.splice(i, 1);
       }
     }
@@ -100,7 +89,7 @@ export class CommunauteComponent implements OnInit {
   public sendMessage(): void {
     const date = new Date();
     this.authService.user.subscribe((user) => {
-      const nom = user.email || 'anonyme';
+      const emailMsg = user.email || 'anonyme';
       const chatBox = document.querySelector('.chat-box .message-list');
       const atBottom = chatBox
         ? chatBox.scrollTop === chatBox.scrollHeight - chatBox.clientHeight
@@ -109,41 +98,24 @@ export class CommunauteComponent implements OnInit {
         chatBox.scrollTo(0, chatBox.scrollHeight);
       }
       setTimeout(() => {
-        this.chatService
-          .addMessage(nom, this.message, date)
-          .then(() => {
-            this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
-            if (chatBox) {
-              chatBox.scrollTo(0, chatBox.scrollHeight);
+
+        this.users.pipe().subscribe(data => {
+          for(let i = 0; i < data.length; i++) {
+            if(data[i].email == emailMsg) {
+              this.chatService
+              .addMessage(emailMsg, data[i].pseudo, this.message, this.communaute, date)
+              .then(() => {
+                this.message = ''; // réinitialiser la valeur de message après l'envoi réussi
+                if (chatBox) {
+                  chatBox.scrollTo(0, chatBox.scrollHeight);
+                }
+              })
+              .catch((error) => {
+              });
             }
-          })
-          .catch((error) => {
-          });
+          }
+        })
       }, 50);
     });
   }
-
-  inviterAmi(): void {
-    const invitationRef = this.firestore.collection<IInvitation>('invitation');
-    this.authService.user.subscribe((user) => {
-      const nouvelleInvitation = {
-        id: this.firestore.createId(),
-        emailInvitation: this.invitationForm.value.email,
-        emailEnvoie: user.email,
-        idCommunaute: 'TODO: récupérer l\'id de la communauté en cours',
-        dateCreation: new Date(),
-        acceptee: false,
-      };
-      invitationRef.add(nouvelleInvitation)
-        .then(() => {
-          console.log('Invitation envoyée avec succès');
-          this.invitationForm.reset();
-        })
-        .catch((erreur) => {
-          console.error('Erreur lors de l\'envoi de l\'invitation', erreur);
-        });
-    });
-  }
-
-
 }

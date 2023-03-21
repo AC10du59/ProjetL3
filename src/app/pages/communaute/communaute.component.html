@@ -1,17 +1,13 @@
 <div class="container-fluid">
 
   <div class="container">
-    <form [formGroup]="invitationForm" (ngSubmit)="inviterAmi()">
-      <div class="form-group">
-        <input type="email" class="form-control" id="email" formControlName="email" required placeholder="Inviter un ami (Adresse mail)" (focus)="invitationForm.controls.email.setValue('')">
-      </div>
-      <button type="submit" class="btn btn-primary">Envoyer l'invitation</button>
-    </form>
+    <h2>Ma communauté : {{this.communaute}}</h2>
   </div>
 
 
   <div class="row">
-    <div class="col-md-8 order-md-1">
+    <div class="cla">
+      <p id="titre">Classement de ma communauté :</p>
       <div class="table-responsive">
         <table mat-table [dataSource]="users" class="mat-elevation-z8">
 
@@ -41,18 +37,15 @@
     </div>
 
 
-    <div class="col-md-4 order-md-2">
+    <div class="mess">
+      <p id="titre">Messagerie :</p>
       <div class="chat-box">
-
         <div class="message-list" *ngIf="messages | async as messages" #messageList>
           <div *ngFor="let message of messages">
-            <small>{{ message.nom }}</small>
+            <small>{{ message.pseudo }}</small>
             <p>{{ message.msg }}</p>
           </div>
-
-
         </div>
-
         <form (ngSubmit)="sendMessage()">
           <div class="form-group">
             <textarea class="form-control" id="msgInput" [(ngModel)]="message" name="message" required
@@ -61,8 +54,6 @@
           <button type="submit" [disabled]="!message" [ngStyle]="{'background-color': !message ? '#ccc' : ''}">Envoyer
           </button>
         </form>
-
-
       </div>
     </div>
   </div>

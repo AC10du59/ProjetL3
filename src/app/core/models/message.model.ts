@@ -1,5 +1,7 @@
 export interface IMessage {
-  nom: string;
+  email: string;
+  pseudo: string;
   msg: string;
+  commu: string;
   date: any;
 }

@@ -12,11 +12,39 @@
   margin: 2px;
 }
 
+.cla {
+  width: 650px;
+}
+
+.mess {
+  width: 300px;
+}
+
+table{
+  width: 90%;
+  border-collapse: collapse;
+}
+
 .caption-classement {
   font-size: 25px;
   font-weight: bold;
   text-decoration: blink;
   margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #3646a8;
+  margin-bottom: 10px;
+  border: 1px dashed #3646a8;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .th-classement {
@@ -100,45 +128,8 @@
 
 .container {
   width: 50vw;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
-
-.container form {
-  border: 1px solid #3646a8;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.container input[type="email"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  font-size: 2vh;
-  color: #3646a8;
-}
-
-.container label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #3646a8;
-}
-
-.container button {
-  background-color: #3646a8;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-}
-
 
 .col-classement {
   width: 50vw;
@@ -150,3 +141,8 @@
   width: 50vw;
 }
 
+#titre {
+  font-size: 18px;
+  color: #293a80;
+  font-weight: bold;
+}
