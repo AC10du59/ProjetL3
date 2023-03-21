@@ -16,21 +16,29 @@ export class ChatService {
     this.messagesCollection = this.firestore.collection<IMessage>('messages');
   }
 
-  public getMessages(): Observable<IMessage[]> {
+  public getMessages(communaute: string): Observable<IMessage[]> {
     return this.messagesCollection.valueChanges({idField: 'id'}).pipe(
       map(messages => {
         messages.sort((a, b) => {
           return b.date.seconds - a.date.seconds;
         });
+        for (let i = messages.length - 1; i >= 0; i--) {
+          if (messages[i].commu !== communaute) {
+            messages.splice(i, 1);
+          }
+        }
+        
         return messages;
       })
     );
   }
 
-  public addMessage(nom: string, msg: string, date: Date): Promise<DocumentReference<IMessage>> {
+  public addMessage(email: string, pseudo: string, msg: string, commu: string, date: Date): Promise<DocumentReference<IMessage>> {
     const message: IMessage = {
-      nom,
+      email,
+      pseudo,
       msg,
+      commu,
       date
     };
     return this.messagesCollection.add(message);

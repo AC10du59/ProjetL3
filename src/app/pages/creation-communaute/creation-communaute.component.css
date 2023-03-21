@@ -45,16 +45,23 @@ input[type="text"] {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 button[type="submit"] {
+  display: inline-block;
   background-color: #3646a8;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 18px;
   padding: 10px 20px;
+  margin: 0 40px;
   cursor: pointer;
+}
+
+.button-container {
+  text-align: center;
 }
 
 button[type="submit"]:hover {
