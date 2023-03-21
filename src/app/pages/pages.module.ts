@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'accueil-component', component: AccueilComponent},
   {path: 'communaute-component', component: CommunauteComponent},
   {path: 'creation-communaute-component', component: CreationCommunauteComponent},
-  {path: '', redirectTo: 'match-component'}
+  {path: '', redirectTo: 'accueil-component'}
 ];
 
 @NgModule({

@@ -8,7 +8,6 @@
       <span class="title">CKR FOOT</span>
       <span class="example-spacer"></span>
       <section>
-        <a class="buttonTop" mat-stroked-button (click)="sidenav.toggle()" href=""> Accueil </a>
         <a class="buttonTop" mat-stroked-button (click)="openDialogContact()"> Contact </a>
         <a class="buttonTop" mat-stroked-button (click)="openDialogRegles()"> Règles </a>
       </section>
@@ -31,8 +30,8 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Accueil</a>
       <div *ngIf="connect(); else elseBlock">
+        <a mat-list-item [routerLink]="'/matchs/accueil-component'" routerLinkActive="active" mat-list-item>Accueil</a>
         <a mat-list-item [routerLink]="'/matchs/match-component'" routerLinkActive="active"> Résultats </a>
         <a mat-list-item [routerLink]="'/matchs/pari-component'" routerLinkActive="active"> Mes paris </a>
         <a mat-list-item [routerLink]="'/matchs/communaute-component'" routerLinkActive="active"> Communaute </a>
@@ -40,6 +39,7 @@
 
       </div>
       <ng-template #elseBlock>
+        <a mat-list-item [routerLink]="'/auth/accueil-component'" routerLinkActive="active" mat-list-item>Accueil</a>
         <a mat-list-item [routerLink]="'/auth/connexion-component'" routerLinkActive="active"> Connexion </a>
         <a mat-list-item [routerLink]="'/auth/create-component'" routerLinkActive="active"> Création compte </a>
       </ng-template>

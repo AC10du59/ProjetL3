@@ -73,7 +73,7 @@ export class AuthService {
       .then((result) => {
          window.alert("Tu es de retour parmi nous ! Viens décrocher la 1ère place !");
          sessionStorage.setItem("isConnected", "true");
-         this.router.navigate(['/matchs/match-component'])
+         this.router.navigate(['/matchs/accueil-component'])
       }).catch((error) => {
         window.alert(error.message)
       })
@@ -95,6 +95,6 @@ export class AuthService {
   public signOutUser() {
     sessionStorage.setItem("isConnected", "false");
     this.afAuth.signOut();
-    this.router.navigate(['/']);
+    this.router.navigate(['/auth']);
   }
 }
